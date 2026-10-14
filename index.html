@@ -3,17 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pravakya Foundation | Art. Education. Service.</title>
-  <meta name="description" content="Pravakya Foundation is a purpose-driven initiative working at the intersection of Art, Education and Service — creating meaningful platforms where people can learn, express and contribute.">
+  <title>Pravakya Foundation | Art • Education • Service</title>
+  <meta name="description" content="Pravakya Foundation is a purpose-driven non-profit initiative working at the intersection of Art, Education and Service — creating platforms for practical learning, creative expression, and community empowerment in Karnataka, India.">
   
-  <!-- Google Fonts: Playfair Display (Serif Headings) & Inter (Clean Sans Body) -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pravakya.org">
+  <meta property="og:title" content="Pravakya Foundation | Art • Education • Service">
+  <meta property="og:description" content="Creating spaces to learn, explore, participate, and contribute through practical workshops, theatre arts, and youth civic engagement.">
+  <meta property="og:image" content="assets/theatre_art_workshop.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pravakya.org">
+  <meta name="twitter:title" content="Pravakya Foundation | Art • Education • Service">
+  <meta name="twitter:description" content="Creating spaces to learn, explore, participate, and contribute through practical workshops, theatre arts, and youth civic engagement.">
+  <meta name="twitter:image" content="assets/theatre_art_workshop.webp">
+
+  <!-- Google Fonts Preload & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+
+  <!-- Organization JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NonprofitOrganization",
+    "name": "Pravakya Foundation",
+    "url": "https://pravakya.org",
+    "logo": "https://pravakya.org/assets/logo_mark.png",
+    "description": "Pravakya Foundation is a purpose-driven initiative built around Art, Education and Service — creating platforms where people can learn, express and contribute.",
+    "foundingDate": "2026",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Moodubidire",
+      "addressRegion": "Karnataka",
+      "postalCode": "574227",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/pravakya-foundation",
+      "https://www.instagram.com/pravakyafoundation"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Background Decorative Line Art Accents -->
   <div class="bg-motifs-container" aria-hidden="true">
@@ -42,11 +89,8 @@
   <header class="site-header" id="site-header">
     <div class="header-container">
       <a href="#home" class="brand-logo" id="logo-btn" aria-label="Pravakya Foundation Home">
-        <img src="assets/logo.jpg" alt="Pravakya Foundation Logo" class="official-logo-img" onerror="this.src='assets/logo.svg'">
-        <div class="brand-text-backup">
-          <span class="brand-name">Pravakya</span>
-          <span class="brand-tag">FOUNDATION</span>
-        </div>
+        <img src="assets/logo_mark.webp" alt="Pravakya Foundation Logo" class="official-logo-img" width="501" height="328">
+        <span class="brand-wordmark">Pravakya Foundation</span>
       </a>
 
       <nav class="main-nav" id="main-nav">
@@ -78,58 +122,54 @@
   </header>
 
   <!-- Main Pages Container -->
-  <main class="pages-wrapper">
+  <main class="pages-wrapper" id="main-content" tabindex="-1">
 
     <!-- ========================================== -->
     <!-- PAGE 1: HOME                               -->
     <!-- ========================================== -->
     <section id="page-home" class="page-section active">
+      <div id="home"></div>
       
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-container">
           <div class="hero-content">
-            <div class="badge-pill">
-              <span class="badge-dot"></span>
-              <span>Art · Education · Service</span>
-            </div>
-            
-            <h1 class="hero-title">
-              Creating Opportunities <br>
-              <span class="text-gold-italic">Through Purpose</span>
+            <h1 class="hero-title" id="main-title" tabindex="-1">
+              <span class="hero-brand-name">Pravakya Foundation</span>
+              <span class="hero-tagline-amber">Art • Education • Service</span>
             </h1>
 
             <p class="hero-subtitle">
-              Pravakya Foundation works at the intersection of Art, Education and Service — creating meaningful platforms where people can learn, experience, express, develop and contribute.
+              Creating spaces to learn, explore, participate, and contribute.
             </p>
 
             <div class="hero-cta-group">
-              <a href="#about" class="btn btn-primary btn-lg page-nav-btn" data-page="about">
-                <span>Explore Our Work</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <a href="#contact" class="btn btn-primary btn-lg page-nav-btn" data-page="contact">
+                <span>Get Involved</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </a>
-              <button class="btn btn-outline btn-lg open-donate-trigger">
-                <span>Partner With Us</span>
-              </button>
+              <a href="#about" class="btn btn-outline btn-lg page-nav-btn" data-page="about">
+                <span>Our Story</span>
+              </a>
             </div>
 
             <!-- Identity Strip -->
             <div class="trust-strip">
               <div class="trust-item">
-                <span class="trust-num">Art</span>
-                <span class="trust-lbl">Understanding & Expression</span>
+                <span class="trust-num">ART</span>
+                <span class="trust-lbl">Creativity & Self-Discovery</span>
               </div>
               <div class="trust-divider"></div>
               <div class="trust-item">
-                <span class="trust-num">Education</span>
-                <span class="trust-lbl">Learning & Advancing</span>
+                <span class="trust-num">EDUCATION</span>
+                <span class="trust-lbl">Practical Learning & Life Skills</span>
               </div>
               <div class="trust-divider"></div>
               <div class="trust-item">
-                <span class="trust-num">Service</span>
-                <span class="trust-lbl">Caring & Contributing</span>
+                <span class="trust-num">SERVICE</span>
+                <span class="trust-lbl">Social Engagement & Youth Empowerment</span>
               </div>
             </div>
           </div>
@@ -141,11 +181,11 @@
             <div class="hero-illustration-wrapper" id="hero-tree-container">
               <svg class="hero-tree-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Background Sun Circle -->
-                <circle cx="250" cy="230" r="160" fill="url(#sun-gradient)" opacity="0.25" />
-                <circle cx="250" cy="230" r="160" stroke="#F5A623" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+                <circle cx="250" cy="230" r="160" fill="url(#sun-gradient)" opacity="0.12" />
+                <circle cx="250" cy="230" r="160" stroke="#F5A623" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.35"/>
 
                 <!-- Rays / Orbit Rings -->
-                <ellipse cx="250" cy="230" rx="210" ry="190" stroke="rgba(245, 166, 35, 0.2)" stroke-width="1" stroke-dasharray="8 8"/>
+                <ellipse cx="250" cy="230" rx="210" ry="190" stroke="rgba(245, 166, 35, 0.15)" stroke-width="1" stroke-dasharray="8 8"/>
 
                 <!-- Waves at Root Base -->
                 <path d="M70 420C120 400 170 430 220 410C270 390 320 420 370 405C420 390 450 410 480 405" stroke="#F5A623" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
@@ -199,20 +239,28 @@
 
                 <defs>
                   <radialGradient id="sun-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 230) rotate(90) scale(160)">
-                    <stop stop-color="#F5A623" stop-opacity="0.8"/>
-                    <stop offset="0.6" stop-color="#F5A623" stop-opacity="0.3"/>
+                    <stop stop-color="#F5A623" stop-opacity="0.35"/>
+                    <stop offset="0.65" stop-color="#F5A623" stop-opacity="0.1"/>
                     <stop offset="1" stop-color="#F5A623" stop-opacity="0"/>
                   </radialGradient>
                 </defs>
               </svg>
             </div>
 
-            <!-- Floating Caption Card -->
-            <div class="hero-floating-card">
-              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=80" alt="Fun with Financials programme" class="floating-img">
+            <!-- Floating Programme Card (Positioned bottom-left with a clear gap from tree) -->
+            <div class="hero-floating-card" aria-label="Featured Programme Card">
+              <div class="floating-card-thumb-wrapper">
+                <img src="assets/fun_with_financials_3.webp" alt="Fun with Financials session at Rotary PU College" class="floating-img" width="1024" height="768">
+                <a href="#fun-with-financials-showcase" class="floating-details-btn inpage-jump-btn" data-jump="fun-with-financials-showcase" data-target-page="home" aria-label="Explore Fun with Financials session showcase & 5 photos">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                  </svg>
+                  <span>Explore Showcase &amp; 5 Photos</span>
+                </a>
+              </div>
               <div class="floating-card-caption">
-                <span class="caption-tag">First Programme</span>
-                <p class="caption-title">Fun with Financials — Making Finance Practical & Meaningful</p>
+                <span class="caption-tag">First Programme · Interactive</span>
+                <p class="caption-title">Fun with Financials — Making Finance Practical &amp; Meaningful</p>
               </div>
             </div>
           </div>
@@ -227,132 +275,306 @@
         </svg>
       </div>
 
-      <!-- Section 2: Three Pillars -->
-      <section class="section-padding bg-cream">
+      <!-- Section 01 | FOUNDATION -->
+      <section class="section-padding bg-cream" id="foundation">
         <div class="container">
           <div class="section-header-left">
             <div class="section-label">
               <span class="label-line"></span>
-              <span>Three Pathways. One Purpose.</span>
+              <span>01 | FOUNDATION</span>
             </div>
             <h2 class="section-title">
-              A Flexible Identity Built <br>
-              <span class="text-serif-italic text-gold">for Lasting Impact</span>
+              Pravakya Foundation <br>
+              <span class="text-serif-italic text-gold-dark">Art • Education • Service</span>
             </h2>
+            <p class="section-lead-text" style="font-size: 1.15rem; line-height: 1.8; color: #334155; margin-top: 16px; max-width: 68ch;">
+              Pravakya Foundation is an initiative built around three interconnected pillars — Art, Education, and Service. We believe that individuals and society grow when creativity is encouraged, learning is practical, and people are given meaningful opportunities to participate and contribute.
+            </p>
           </div>
 
-          <div class="pillars-grid">
+          <div class="pillars-grid" style="margin-top: 36px;">
 
-            <!-- Pillar: Art & Culture -->
-            <article class="pillar-card pillar-offset-1">
-              <div class="pillar-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="1.75">
+            <!-- Pillar: Art -->
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M8 12s1.5-3 4-3 4 3 4 3-1.5 3-4 3-4-3-4-3z"/>
                   <circle cx="12" cy="12" r="1"/>
                 </svg>
               </div>
-              <div class="pillar-badge">01. Art & Culture</div>
-              <h3 class="pillar-title">Understanding. Experiencing. Growing.</h3>
+              <div class="pillar-badge">Through Art</div>
+              <h3 class="pillar-title">Creativity, Theatre &amp; Self-Discovery</h3>
               <p class="pillar-desc">
-                Art and cultural awareness through theatre, performing arts, creative experiences and platforms that give artists, speakers and creators a space to be seen and heard.
+                We promote creativity, cultural awareness, theatrical expression, and communication, creating platforms to understand our cultural roots and nurture human empathy.
               </p>
-              <ul class="pillar-bullets">
-                <li><span class="bullet-dot"></span>Theatre & performing arts</li>
-                <li><span class="bullet-dot"></span>Cultural experiences & creative development</li>
-                <li><span class="bullet-dot"></span>Platforms for artists and creators</li>
-              </ul>
+              <blockquote class="pillar-pull-quote">
+                “Art is not only about performance. It is a way of understanding ourselves, our surroundings, and one another.”
+              </blockquote>
+              <div class="pillar-card-action">
+                <a href="#mayadveepa-showcase" class="btn btn-outline btn-sm inpage-jump-btn" data-jump="mayadveepa-showcase" data-target-page="home" aria-label="Conducted: Mayadveepa — explore stage production and 5 photos">
+                  <span>Conducted: Mayadveepa</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
             </article>
 
-            <!-- Pillar: Education (Featured) -->
-            <article class="pillar-card pillar-featured">
-              <div class="featured-badge-top">Signature Pillar</div>
-              <div class="pillar-icon">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="1.75">
+            <!-- Pillar: Education -->
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                   <path d="M12 6v6M9 9h6"/>
                 </svg>
               </div>
-              <div class="pillar-badge badge-gold">02. Education</div>
-              <h3 class="pillar-title text-light">Learning. Applying. Advancing.</h3>
-              <p class="pillar-desc text-light-muted">
-                Bridging learning with real-world understanding through career awareness, financial literacy, professional readiness, communication skills and experiential programmes.
+              <div class="pillar-badge">Through Education</div>
+              <h3 class="pillar-title">Practical Learning &amp; Life Skills</h3>
+              <p class="pillar-desc">
+                We focus on career readiness, financial literacy, communication, and professional development, helping students connect classroom knowledge with real-world practice.
               </p>
-              <div class="pillar-image-wrap">
-                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Students in a financial literacy session" class="pillar-img">
+              <blockquote class="pillar-pull-quote">
+                “Education should not stop with textbooks. Learning becomes meaningful when connected with lived situations.”
+              </blockquote>
+              <div class="pillar-card-action">
+                <a href="#fun-with-financials-showcase" class="btn btn-outline btn-sm inpage-jump-btn" data-jump="fun-with-financials-showcase" data-target-page="home" aria-label="Conducted: Fun with Financials — explore session details and photo gallery">
+                  <span>Conducted: Fun with Financials</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
             </article>
 
             <!-- Pillar: Service -->
-            <article class="pillar-card pillar-offset-2">
-              <div class="pillar-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="1.75">
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                   <circle cx="9" cy="7" r="4"/>
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                 </svg>
               </div>
-              <div class="pillar-badge">03. Service</div>
-              <h3 class="pillar-title">Caring. Participating. Contributing.</h3>
+              <div class="pillar-badge">Through Service</div>
+              <h3 class="pillar-title">Social Engagement &amp; Empowerment</h3>
               <p class="pillar-desc">
-                Community engagement, environmental awareness, civic responsibility and youth development initiatives that build a genuine sense of participation and collective responsibility.
+                We encourage youth civic responsibility, environmental awareness, and community initiatives, inspiring individuals to use their skills for the betterment of society.
               </p>
-              <ul class="pillar-bullets">
-                <li><span class="bullet-dot"></span>Community & civic engagement</li>
-                <li><span class="bullet-dot"></span>Environmental awareness programmes</li>
-                <li><span class="bullet-dot"></span>Educational support & outreach</li>
-              </ul>
+              <blockquote class="pillar-pull-quote">
+                “Service is about understanding that our knowledge and abilities can be used for the benefit of others.”
+              </blockquote>
+              <div class="pillar-card-action">
+                <span class="service-dev-badge">Initiatives In Development</span>
+              </div>
             </article>
 
+          </div>
+
+          <div class="foundation-callout-box">
+            <p class="callout-p-lead">
+              Pravakya Foundation works with people, institutions, artists, educators, and professionals to create spaces where everyone can learn, explore, participate, share their skills, and contribute.
+            </p>
+            <p class="callout-p-bold">
+              Our aim is to bring these three dimensions together through meaningful programs and experiences that inspire creativity, empower learning, and create a positive impact in society.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Section 3: Journey So Far -->
-      <section class="impact-counter-section">
+      <!-- Section 2: Real Impact Strip -->
+      <section class="impact-counter-section" id="impact-section" aria-label="Impact and Achievements">
         <div class="container">
           <div class="impact-header text-center">
-            <span class="section-label-center">Where the Journey Begins</span>
-            <h2 class="section-title text-light">2026 — The Start of Something Meaningful</h2>
+            <span class="section-label-center">Impact &amp; Milestones</span>
+            <h2 class="section-title text-light">Real Numbers, Real Change</h2>
+            <p class="text-light-muted" style="max-width: 620px; margin: 12px auto 0; font-size: 1.05rem;">
+              Every session is documented with authentic participation, institutional verification, and direct student mentorship.
+            </p>
           </div>
 
           <div class="counters-grid">
             <div class="counter-item">
               <div class="counter-number-wrap">
-                <span class="counter-val" data-target="2026">0</span>
+                <span class="counter-val" data-target="85">85</span>
+                <span class="counter-plus">+</span>
               </div>
-              <span class="counter-label">Year Founded</span>
-              <p class="counter-desc">Pravakya Foundation begins with a clear identity built around Art, Education and Service.</p>
+              <span class="counter-label">Students Reached</span>
+              <p class="counter-desc">Pre-University commerce and degree students trained across finance and career modules.</p>
             </div>
 
             <div class="counter-item">
               <div class="counter-number-wrap">
-                <span class="counter-val" data-target="1"></span>
-                <span class="counter-plus">st</span>
+                <span class="counter-val" data-target="2">2</span>
               </div>
-              <span class="counter-label">Programme Conducted</span>
-              <p class="counter-desc">Fun with Financials — an interactive financial literacy programme for commerce students.</p>
+              <span class="counter-label">Flagship Programmes</span>
+              <p class="counter-desc">Fun with Financials and PRO (Professional Readiness Orientation) conducted on campus.</p>
             </div>
 
             <div class="counter-item">
               <div class="counter-number-wrap">
-                <span class="counter-val" data-target="3"></span>
+                <span class="counter-val" data-target="1">1</span>
               </div>
-              <span class="counter-label">Core Pillars</span>
-              <p class="counter-desc">Art & Culture, Education, and Service — three distinct pathways guided by one purpose.</p>
+              <span class="counter-label">Institutional Partner</span>
+              <p class="counter-desc">Rotary Pre-University College, Moodubidire (College Code: SS0326).</p>
             </div>
 
             <div class="counter-item">
               <div class="counter-number-wrap">
-                <span class="counter-val" data-target="100"></span>
+                <span class="counter-val" data-target="100">100</span>
                 <span class="counter-percent">%</span>
               </div>
-              <span class="counter-label">Transparent</span>
-              <p class="counter-desc">Impact numbers will be added as they are genuinely achieved — no inflation, no shortcuts.</p>
+              <span class="counter-label">Hands-On &amp; Interactive</span>
+              <p class="counter-desc">100% activity-driven sessions featuring simulations, unit economics math, and 1-on-1 feedback.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Featured Art Programme — Mayadveepa Stage Production -->
+      <section class="section-padding bg-cream" id="mayadveepa-showcase" aria-label="Mayadveepa Theatre Project">
+        <div class="container">
+          
+          <div class="section-header-center">
+            <span class="section-label-center">ART &amp; CULTURE · THEATRE PRODUCTION</span>
+            <h2 class="section-title">Mayadveepa — The Magical Island</h2>
+            <p class="section-subtitle max-w-700 mx-auto">
+              A 30-minute original stage production developed by <strong>Pravakya Foundation</strong> in collaboration with <strong>Navachethana School, Venur</strong>.
+            </p>
+          </div>
+
+          <!-- Feature Spotlight Card -->
+          <div class="art-feature-card" style="margin-top: 36px;">
+            <div class="art-feature-media">
+              <img src="assets/mayadveepa_1.webp" alt="Mayadveepa stage production featuring winged character and ensemble performers" class="art-feature-img" width="1024" height="576" loading="lazy" onclick="openImageLightbox('assets/mayadveepa_1.webp', 'Mayadveepa: The Winged Guardian and Ensemble')">
+              <div class="art-media-badge">
+                <span>20 Student Performers · 30-Minute Play</span>
+              </div>
+            </div>
+            <div class="art-feature-content">
+              <div class="section-label">
+                <span class="label-line"></span>
+                <span>Theatre Project</span>
+              </div>
+              <h3 class="art-feature-subtitle" style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--navy); margin-bottom: 12px; font-weight: 700;">
+                Exploring Storytelling, Teamwork &amp; Stage Performance
+              </h3>
+              <p class="art-lead-p" style="font-size: 1.05rem; line-height: 1.75; color: #334155;">
+                Mayadveepa is a theatre project by Pravakya Foundation that brought together 20 students from primary to high school to create and perform a 30-minute stage production. The project was developed in collaboration with Navachethana School, Venur, giving young students an opportunity to explore storytelling, acting, creativity, teamwork, and stage performance.
+              </p>
+              
+              <blockquote class="pillar-pull-quote" style="margin: 16px 0; padding-left: 16px; border-left: 3px solid var(--gold); font-style: italic; color: #475569;">
+                “More than just a play, Mayadveepa was an opportunity for young minds to express themselves, discover their abilities, work together, and experience the joy of theatre.”
+              </blockquote>
+
+              <!-- Production Credits Grid -->
+              <div class="production-credits-box">
+                <div class="production-credits-title">Production Credits &amp; Details</div>
+                <div class="production-credits-grid">
+                  <div class="credit-item">
+                    <span class="credit-role">Direction</span>
+                    <span class="credit-name">Josith Shetty</span>
+                  </div>
+                  <div class="credit-item">
+                    <span class="credit-role">Art</span>
+                    <span class="credit-name">Shrikantta Rao</span>
+                  </div>
+                  <div class="credit-item">
+                    <span class="credit-role">Design</span>
+                    <span class="credit-name">Revan Pinto</span>
+                  </div>
+                  <div class="credit-item">
+                    <span class="credit-role">Partner School</span>
+                    <span class="credit-name">Navachethana School, Venur</span>
+                  </div>
+                  <div class="credit-item">
+                    <span class="credit-role">Cast &amp; Crew</span>
+                    <span class="credit-name">20 Students (Primary to High School)</span>
+                  </div>
+                  <div class="credit-item">
+                    <span class="credit-role">Format</span>
+                    <span class="credit-name">30-Minute Stage Production</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 5-Photo Production Stage Gallery Grid -->
+          <div style="margin-top: 50px;">
+            <div class="section-header-left" style="margin-bottom: 24px;">
+              <div class="section-label">
+                <span class="label-line"></span>
+                <span>Stage Gallery</span>
+              </div>
+              <h3 class="section-title" style="font-size: 1.8rem;">Glimpses from the Production</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Click on any photograph to view in full-screen gallery viewer.</p>
+            </div>
+
+            <div class="session-gallery-grid">
+              
+              <!-- Photo 1 -->
+              <div class="gallery-card">
+                <div class="gallery-card-thumb" onclick="openImageLightbox('assets/mayadveepa_1.webp', 'Mayadveepa: The Winged Guardian — Student actor on stage riser flanked by ensemble bamboo guards')">
+                  <img src="assets/mayadveepa_1.webp" alt="The Winged Guardian on stage with bamboo guards in Mayadveepa" class="gallery-card-img" width="1024" height="576" loading="lazy">
+                  <span class="gallery-badge">Stage Character</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <h3 class="gallery-card-title">The Winged Guardian</h3>
+                  <p>Student actor portraying the mythical winged character on the central riser, framed by ensemble bamboo guardians.</p>
+                </div>
+              </div>
+
+              <!-- Photo 2 -->
+              <div class="gallery-card">
+                <div class="gallery-card-thumb" onclick="openImageLightbox('assets/mayadveepa_2.webp', 'Mayadveepa: Island Queen &amp; Choir — Namaskara scene under violet stage lights')">
+                  <img src="assets/mayadveepa_2.webp" alt="Island Queen in traditional attire with choir holding candles in Mayadveepa" class="gallery-card-img" width="1024" height="576" loading="lazy">
+                  <span class="gallery-badge">Ceremonial Ensemble</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <h3 class="gallery-card-title">Island Queen &amp; Choir</h3>
+                  <p>Namaskara scene with the island queen flanked by student performers bearing candles and floral offerings.</p>
+                </div>
+              </div>
+
+              <!-- Photo 3 -->
+              <div class="gallery-card">
+                <div class="gallery-card-thumb" onclick="openImageLightbox('assets/mayadveepa_3.webp', 'Mayadveepa: The Forest Elder — Dramatic sequence with straw crown and island tribe')">
+                  <img src="assets/mayadveepa_3.webp" alt="Forest Elder character standing on pedestal surrounded by student tribe in Mayadveepa" class="gallery-card-img" width="1024" height="576" loading="lazy">
+                  <span class="gallery-badge">Dramatic Sequence</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <h3 class="gallery-card-title">The Forest Elder</h3>
+                  <p>Solo dramatic sequence with straw-woven crown and traditional attire amidst island tribe performers.</p>
+                </div>
+              </div>
+
+              <!-- Photo 4 -->
+              <div class="gallery-card">
+                <div class="gallery-card-thumb" onclick="openImageLightbox('assets/mayadveepa_4.webp', 'Mayadveepa: Aura of the Mystical Isle — Expressive monologue under crimson lighting')">
+                  <img src="assets/mayadveepa_4.webp" alt="Actor performing intense monologue under dramatic red stage lighting in Mayadveepa" class="gallery-card-img" width="1024" height="576" loading="lazy">
+                  <span class="gallery-badge">Lighting &amp; Expression</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <h3 class="gallery-card-title">Aura of the Mystical Isle</h3>
+                  <p>Expressive solo acting illuminated under rich crimson stage lighting exploring dramatic tension and poise.</p>
+                </div>
+              </div>
+
+              <!-- Photo 5 -->
+              <div class="gallery-card">
+                <div class="gallery-card-thumb" onclick="openImageLightbox('assets/mayadveepa_5.webp', 'Mayadveepa: The Grand Climax — Full 20-student ensemble finale on stage')">
+                  <img src="assets/mayadveepa_5.webp" alt="Full 20-student ensemble finale with bamboo spears and foliage in Mayadveepa" class="gallery-card-img" width="1024" height="576" loading="lazy">
+                  <span class="gallery-badge">Ensemble Finale</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <h3 class="gallery-card-title">The Grand Climax</h3>
+                  <p>All 20 students unite on stage holding bamboo spears and foliage in a triumphant celebration of teamwork and joy.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -361,9 +583,9 @@
         <div class="container">
           <div class="founder-teaser-wrapper">
             <div class="founder-teaser-image">
-              <img src="assets/founder.jpg" alt="Josith Shetty — Founder, Pravakya Foundation" class="founder-img">
-              <div class="founder-image-accent">
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#F5A623" stroke-width="1.5">
+              <img src="assets/founder.webp" alt="Josith Shetty, Founder of Pravakya Foundation" class="founder-img" width="1005" height="1024" loading="lazy">
+              <div class="founder-image-accent" aria-hidden="true">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#FDA825" stroke-width="1.5">
                   <circle cx="30" cy="30" r="28" stroke-dasharray="4 4"/>
                   <path d="M20 30L27 37L40 22"/>
                 </svg>
@@ -371,18 +593,19 @@
             </div>
 
             <div class="founder-teaser-content">
-              <div class="quote-mark">"</div>
+              <h2 class="sr-only">Founder's Message</h2>
+              <div class="quote-mark" aria-hidden="true">“</div>
               <blockquote class="founder-quote">
                 Bridging the gap between knowledge and action is where transformation begins. Pravakya was born from a belief that learning becomes truly meaningful when it can be applied, shared and transformed into action.
               </blockquote>
               <div class="founder-signature">
-                <h4 class="founder-name">Josith Shetty</h4>
+                <h3 class="founder-name">Josith Shetty</h3>
                 <p class="founder-title">Founder, Pravakya Foundation</p>
               </div>
               <div class="founder-cta">
                 <a href="#founders" class="btn btn-primary page-nav-btn" data-page="founders">
                   <span>Meet the Leadership</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </a>
@@ -392,8 +615,124 @@
         </div>
       </section>
 
+      <!-- Section 5: Conducted Education Programme — Fun with Financials Live Showcase -->
+      <section class="section-padding bg-sand" id="fun-with-financials-showcase" aria-label="Fun with Financials Programme Showcase">
+        <div class="container">
+          <div class="section-header-center">
+            <span class="section-label-center">EDUCATION · CONDUCTED PROGRAMME</span>
+            <h2 class="section-title">Fun with Financials — In Action</h2>
+            <p class="section-subtitle max-w-700 mx-auto">
+              Our inaugural conducted programme connecting commerce students with real-world unit economics, stock market fundamentals, and career pathways at <strong>Rotary Pre-University College, Moodubidire</strong> (College Code: SS0326).
+            </p>
+          </div>
+
+          <div class="session-gallery-grid">
+            
+            <!-- Card 1 -->
+            <div class="gallery-card">
+              <div class="gallery-card-thumb" onclick="openImageLightbox('assets/fun_with_financials_1.webp', 'Income Statement Session — Teaching profit, loss &amp; tea shop unit economics')">
+                <img src="assets/fun_with_financials_1.webp" alt="Income Statement Session at Rotary PU College" class="gallery-card-img" width="1024" height="768" loading="lazy">
+                <span class="gallery-badge">Presentation</span>
+              </div>
+              <div class="gallery-card-caption">
+                <h3 class="gallery-card-title">Income Statement Breakdown</h3>
+                <p>Teaching profit, loss &amp; expenses using real-world business examples like tea shop economics.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="gallery-card">
+              <div class="gallery-card-thumb" onclick="openImageLightbox('assets/fun_with_financials_2.webp', 'Interactive Activity Session — Full student participation in financial challenges')">
+                <img src="assets/fun_with_financials_2.webp" alt="Auditorium Activity Session" class="gallery-card-img" width="1024" height="576" loading="lazy">
+                <span class="gallery-badge">Interactive</span>
+              </div>
+              <div class="gallery-card-caption">
+                <h3 class="gallery-card-title">Auditorium Fun Time</h3>
+                <p>Full student participation in team activities, financial puzzles and practical exercises.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="gallery-card">
+              <div class="gallery-card-thumb" onclick="openImageLightbox('assets/fun_with_financials_3.webp', 'Live Classroom Interaction — Engaging commerce students with practical learning')">
+                <img src="assets/fun_with_financials_3.webp" alt="Live Classroom Interaction" class="gallery-card-img" width="1024" height="768" loading="lazy">
+                <span class="gallery-badge">Classroom</span>
+              </div>
+              <div class="gallery-card-caption">
+                <h3 class="gallery-card-title">Live Presentation View</h3>
+                <p>Engaging commerce students with interactive slides and practical financial learning.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="gallery-card">
+              <div class="gallery-card-thumb" onclick="openImageLightbox('assets/fun_with_financials_4.webp', 'Speaker Session — Shrikantta Rao explaining stock market concepts &amp; finance careers')">
+                <img src="assets/fun_with_financials_4.webp" alt="Stock Market &amp; Career Session" class="gallery-card-img" width="1024" height="768" loading="lazy">
+                <span class="gallery-badge">Speaker Session</span>
+              </div>
+              <div class="gallery-card-caption">
+                <h3 class="gallery-card-title">Basics of Stock &amp; Careers</h3>
+                <p>Shrikantta Rao explaining stock market concepts and career options in corporate finance.</p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="gallery-card">
+              <div class="gallery-card-thumb" onclick="openImageLightbox('assets/fun_with_financials_5.webp', 'Institutional Welcome — Floral welcome &amp; felicitation by Rotary PU College faculty')">
+                <img src="assets/fun_with_financials_5.webp" alt="Rotary PU College Felicitation" class="gallery-card-img" width="1024" height="768" loading="lazy">
+                <span class="gallery-badge">Felicitation</span>
+              </div>
+              <div class="gallery-card-caption">
+                <h3 class="gallery-card-title">Institutional Welcome</h3>
+                <p>Floral welcome &amp; token of appreciation by Rotary Pre-University College faculty.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners & Institutions Row -->
+      <section class="partners-strip-section" aria-label="Institutional Partners">
+        <div class="container">
+          <div class="partners-header text-center">
+            <span class="partners-eyebrow">Institutional Partnerships &amp; Collaborations</span>
+          </div>
+          <div class="partners-row">
+            <div class="partner-card">
+              <div class="partner-icon-circle" aria-hidden="true">🏛️</div>
+              <div class="partner-info">
+                <strong>Rotary Pre-University College</strong>
+                <span>Moodubidire · Code: SS0326</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-icon-circle" aria-hidden="true">🎭</div>
+              <div class="partner-info">
+                <strong>Navachethana School</strong>
+                <span>Venur · Mayadveepa Production Partner</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-icon-circle" aria-hidden="true">📚</div>
+              <div class="partner-info">
+                <strong>Commerce &amp; Arts Faculty Forum</strong>
+                <span>District Academic Network</span>
+              </div>
+            </div>
+            <div class="partner-card">
+              <div class="partner-icon-circle" aria-hidden="true">🤝</div>
+              <div class="partner-info">
+                <strong>Youth Employability Network</strong>
+                <span>Campus Career Mentorship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Section 5: Latest Work Preview Grid -->
-      <section class="section-padding bg-cream">
+      <section class="section-padding bg-cream" id="work-preview">
         <div class="container">
           <div class="section-header-flex">
             <div>
@@ -403,74 +742,133 @@
               </div>
               <h2 class="section-title">What We've Been Doing</h2>
             </div>
-            <a href="#news" class="btn btn-outline page-nav-btn" data-page="news">
+            <a href="#news" class="btn btn-outline page-nav-btn" data-page="news" style="margin-left: 20px;">
               <span>See All Programmes</span>
             </a>
           </div>
 
           <div class="news-grid-preview" id="home-news-preview">
-            <!-- Card 1 -->
+            
+            <!-- Programme Card 1: Education -->
             <article class="news-card">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=600&q=80" alt="Fun with Financials programme" class="news-img">
-                <span class="news-cat-tag">Education</span>
+                <img src="assets/fun_with_financials_1.webp" alt="Fun with Financials presentation at Rotary PU College, Moodubidire" class="news-img" width="1024" height="768" loading="lazy">
+                <span class="news-cat-tag tag-education">Education</span>
               </div>
               <div class="news-card-body">
-                <span class="news-date">2026</span>
-                <h3 class="news-title">Fun with Financials — Making Finance Practical and Meaningful</h3>
+                <span class="news-date">12 Jan 2026</span>
+                <h3 class="news-title">Fun with Financials — Making Finance Practical &amp; Meaningful</h3>
                 <p class="news-excerpt">
-                  Our first conducted programme connects commerce students with real-world finance, stock market basics and career pathways through interactive, team-based activities.
+                  Our inaugural conducted programme connects commerce students with real-world unit economics, stock market fundamentals, and career pathways through interactive activities.
                 </p>
-                <button class="news-read-btn read-article-btn" data-id="1">
-                  <span>Read More</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <a href="#fun-with-financials-showcase" class="news-read-btn inpage-jump-btn" data-jump="fun-with-financials-showcase" data-target-page="home" aria-label="Read More &amp; Gallery — Fun with Financials session photos">
+                  <span>Read More &amp; Gallery</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
-                </button>
+                </a>
               </div>
             </article>
 
-            <!-- Card 2 -->
+            <!-- Programme Card 2: Service / Career Readiness -->
             <article class="news-card">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="Students at Rotary PU College" class="news-img">
-                <span class="news-cat-tag">Community</span>
+                <img src="assets/pro_readiness_3.webp" alt="1-on-1 Mock Interview session in PRO Programme" class="news-img" width="541" height="694" loading="lazy">
+                <span class="news-cat-tag tag-service">Service</span>
               </div>
               <div class="news-card-body">
-                <span class="news-date">2026</span>
-                <h3 class="news-title">Inside the Classroom — Fun with Financials at Rotary PU College, Moodbidire</h3>
+                <span class="news-date">18 Feb 2026</span>
+                <h3 class="news-title">PRO — Professional Readiness Orientation for College Students</h3>
                 <p class="news-excerpt">
-                  A look at how students participated in presentations, activities and discussions designed to turn abstract concepts into lived experience.
+                  Bridging the campus-to-corporate divide with resume profiling, communication etiquette, workplace expectations, and individual 1-on-1 mock interviews.
                 </p>
-                <button class="news-read-btn read-article-btn" data-id="3">
-                  <span>Read More</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <a href="#news" class="news-read-btn page-nav-btn" data-page="news" aria-label="Read More &amp; Gallery — PRO Professional Readiness Orientation">
+                  <span>Read More &amp; Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
-                </button>
+                </a>
               </div>
             </article>
 
-            <!-- Card 3 -->
+            <!-- Programme Card 3: Art & Culture — Mayadveepa -->
             <article class="news-card">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Pravakya Foundation pillars" class="news-img">
-                <span class="news-cat-tag">Foundation</span>
+                <img src="assets/mayadveepa_1.webp" alt="Mayadveepa — The Magical Island Stage Production" class="news-img" width="1024" height="576" loading="lazy">
+                <span class="news-cat-tag tag-art">Art</span>
               </div>
               <div class="news-card-body">
-                <span class="news-date">2026</span>
-                <h3 class="news-title">Pravakya Foundation — Who We Are and What We Stand For</h3>
+                <span class="news-date">Theatre Production</span>
+                <h3 class="news-title">Mayadveepa — The Magical Island Stage Production</h3>
                 <p class="news-excerpt">
-                  An introduction to our three pillars of Art, Education and Service, and the central belief that guides every programme we create.
+                  A landmark 30-minute stage production bringing together 20 students from primary to high school with Navachethana School, Venur. Directed by Josith Shetty, Art by Shrikantta Rao, Design by Revan Pinto.
                 </p>
-                <button class="news-read-btn read-article-btn" data-id="2">
-                  <span>Read More</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <a href="#mayadveepa-showcase" class="news-read-btn inpage-jump-btn" data-jump="mayadveepa-showcase" data-target-page="home" aria-label="Read More &amp; Gallery — Mayadveepa Stage Production">
+                  <span>Read More &amp; Gallery</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
-                </button>
+                </a>
               </div>
             </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Student & Teacher Testimonials -->
+      <section class="section-padding bg-sand" id="testimonials-section" aria-label="Testimonials">
+        <div class="container">
+          <div class="section-header-center">
+            <span class="section-label-center">Voice from Campuses</span>
+            <h2 class="section-title">What Students &amp; Mentors Say</h2>
+            <p class="section-lead-text" style="max-width: 600px; margin: 12px auto 0; color: #475569;">
+              Real feedback from participants and educators who experienced our hands-on sessions.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                “The practical approach to income statements using local tea-stall economics broke the monotony of textbook commerce. Students who usually stayed quiet were actively raising hands and solving financial puzzles.”
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">RR</div>
+                <div>
+                  <strong class="author-name">Prof. Ramesh Rao</strong>
+                  <span class="author-role">Faculty of Commerce, Rotary PU College, Moodubidire</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                “Before this session, balance sheets and stock markets felt like intimidating exams. Fun with Financials made it feel like a real puzzle we could solve in teams. I now want to pursue finance after graduation.”
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">SK</div>
+                <div>
+                  <strong class="author-name">Sneha M. Kulal</strong>
+                  <span class="author-role">Pre-University Commerce Student, Moodubidire</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                “The 1-on-1 mock interview gave me instant constructive feedback on my posture, eye contact, and resume phrasing. It replaced interview fear with clear preparation and confidence.”
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">AS</div>
+                <div>
+                  <strong class="author-name">Aditya Shenoy</strong>
+                  <span class="author-role">Final-Year Student, PRO Career Orientation</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -506,9 +904,10 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- PAGE 2: ABOUT US                           -->
+    <!-- PAGE 2: STORY, VISION & MISSION            -->
     <!-- ========================================== -->
     <section id="page-about" class="page-section">
+      <div id="about"></div>
       
       <!-- Page Hero Header -->
       <section class="page-hero-banner">
@@ -516,44 +915,47 @@
           <div class="page-hero-content">
             <div class="section-label text-gold">
               <span class="label-line line-gold"></span>
-              <span>Who We Are</span>
+              <span>02 | STORY, VISION & MISSION</span>
             </div>
             <h1 class="page-hero-title">
-              A Purpose-Driven Platform <br>
-              <span class="text-serif-italic text-gold">for Learning, Culture & Service</span>
+              Our Story, Vision <br>
+              <span class="text-serif-italic text-gold">& Mission</span>
             </h1>
             <p class="page-hero-lead">
-              Pravakya Foundation is a purpose-driven initiative working at the intersection of Art, Education and Service. We believe that education should go beyond classrooms, art should go beyond stages, and service should go beyond intention.
+              Pravakya Foundation brings together Art, Education, and Service through meaningful programs, practical learning, creative experiences, and community initiatives.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Narrative & Image Section -->
+      <!-- Narrative Section: Our Story -->
       <section class="section-padding bg-cream">
         <div class="container">
           <div class="story-split-grid">
             <div class="story-text-col">
-              <h2 class="story-heading">What Pravakya Does</h2>
+              <h2 class="story-heading">Our Story</h2>
               <p class="story-p">
-                Pravakya creates meaningful platforms where people can <strong>learn, experience, express, develop and contribute</strong>. Our work takes many forms — learning programmes, cultural initiatives, youth development, community engagement, awareness activities and collaborative projects.
+                Pravakya began with a simple thought — people need spaces where they can discover themselves, learn from experience, express their abilities, and contribute to society.
               </p>
               <p class="story-p">
-                We work with educational institutions, corporates, community groups, artists, professionals, volunteers and social-impact partners. The foundation is intentionally flexible, designed to grow as new needs and opportunities emerge.
+                The idea grew from experiences in theatre, education, professional life, and working with people from different backgrounds. Over time, it became clear that art and creativity can help people discover confidence and perspective; education can help them understand opportunities and prepare for life; and service can help them use what they have learned for something beyond themselves.
+              </p>
+              <p class="story-p" style="font-weight: 600; color: #0F172A;">
+                This led to the evolution of Pravakya Foundation around three pillars: Art. Education. Service.
               </p>
 
               <div class="story-quote-card">
                 <div class="quote-symbol">"</div>
                 <p class="quote-text">
-                  Knowledge becomes meaningful when it can be applied, shared and transformed into action.
+                  Creating spaces to learn, explore, participate, and contribute.
                 </p>
               </div>
             </div>
 
             <div class="story-image-col">
               <div class="story-image-stack">
-                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Students engaged in a learning activity" class="story-img-main">
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Group discussion during a programme" class="story-img-sub">
+                <img src="assets/fun_with_financials_4.webp" alt="Fun with Financials session by Pravakya Foundation" class="story-img-main" width="1024" height="768" loading="lazy">
+                <img src="assets/fun_with_financials_5.webp" alt="Felicitation at Rotary PU College, Moodubidire" class="story-img-sub" width="1024" height="768" loading="lazy">
                 <div class="story-motif-accent">
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#F5A623" stroke-width="1.75">
                     <path d="M8 38C16 35 23 37 24 39C25 37 32 35 40 38V8C32 5 25 7 24 9C23 7 16 5 8 8V38Z"/>
@@ -570,45 +972,59 @@
       <section class="section-padding bg-sand">
         <div class="container">
           <div class="section-header-center">
-            <span class="section-label-center">Direction</span>
+            <span class="section-label-center">OUR PURPOSE</span>
             <h2 class="section-title">Vision & Mission</h2>
           </div>
 
-          <div class="values-4-grid">
-            <div class="value-card">
-              <div class="value-number">Vision</div>
-              <h3 class="value-title">The Society We Work Towards</h3>
-              <p class="value-desc">
-                A society where knowledge inspires action, creativity finds expression, and every individual is empowered to contribute meaningfully to a better future.
-              </p>
+          <div class="vision-mission-quotes-grid">
+            
+            <!-- Vision Pull Quote Card -->
+            <div class="pull-quote-card vision-quote-card">
+              <div class="pull-quote-accent-bar"></div>
+              <div class="pull-quote-header">
+                <span class="quote-badge-tag">OUR VISION</span>
+              </div>
+              <blockquote class="pull-quote-body">
+                <span class="oversized-orange-quote" aria-hidden="true">“</span>
+                <p class="pull-quote-text">
+                  Our vision is to create a society where people discover their potential, find opportunities to explore and learn, develop their creativity and knowledge, and use their abilities to create a positive impact in the community.
+                </p>
+              </blockquote>
             </div>
 
-            <div class="value-card">
-              <div class="value-number">Mission</div>
-              <h3 class="value-title">How We Get There</h3>
-              <p class="value-desc">
-                We work through Art, Education and Service to create meaningful opportunities for individuals and communities to learn, express, develop and contribute.
-              </p>
+            <!-- Mission Pull Quote Card -->
+            <div class="pull-quote-card mission-quote-card">
+              <div class="pull-quote-accent-bar"></div>
+              <div class="pull-quote-header">
+                <span class="quote-badge-tag">OUR MISSION</span>
+              </div>
+              <blockquote class="pull-quote-body">
+                <span class="oversized-orange-quote" aria-hidden="true">“</span>
+                <p class="pull-quote-text">
+                  Our mission is to bring Art, Education, and Service together through meaningful programs, practical learning, creative experiences, and community initiatives. We work with people, institutions, artists, and communities to create spaces where everyone can learn, explore, participate, share their skills, and contribute.
+                </p>
+              </blockquote>
             </div>
 
-            <div class="value-card">
-              <div class="value-number">Belief</div>
-              <h3 class="value-title">What Guides Us</h3>
-              <p class="value-desc">
-                Knowledge becomes meaningful when it can be applied, shared and transformed into action. This belief shapes every programme and initiative we design.
-              </p>
-            </div>
-
-            <div class="value-card">
-              <div class="value-number">Design</div>
-              <h3 class="value-title">Built for Collaboration</h3>
-              <p class="value-desc">
-                A flexible identity that can work with institutions, corporates, community groups, artists, professionals and volunteers across a wide range of contexts.
-              </p>
-            </div>
           </div>
         </div>
       </section>
+
+      <!-- Section Divider -->
+      <div class="floral-branch-divider light-section" aria-hidden="true">
+        <svg viewBox="0 0 600 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 16 H 220" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <path d="M 220 16 Q 260 8 300 16 T 380 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M 260 12 Q 268 4 278 10 Q 270 18 260 12 Z" fill="currentColor" opacity="0.8"/>
+          <path d="M 330 18 Q 338 26 348 20 Q 340 12 330 18 Z" fill="currentColor" opacity="0.8"/>
+          <circle cx="248" cy="13" r="2.5" fill="currentColor"/>
+          <circle cx="300" cy="16" r="3.5" fill="currentColor"/>
+          <path d="M 300 8 C 296 11 296 15 300 16 C 304 15 304 11 300 8 Z" fill="currentColor" opacity="0.85"/>
+          <path d="M 300 24 C 296 21 296 17 300 16 C 304 17 304 21 300 24 Z" fill="currentColor" opacity="0.85"/>
+          <circle cx="352" cy="19" r="2.5" fill="currentColor"/>
+          <path d="M 380 16 H 600" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+        </svg>
+      </div>
 
       <!-- What We Do -->
       <section class="section-padding bg-cream">
@@ -698,105 +1114,125 @@
     <!-- ========================================== -->
     <!-- PAGE 3: LEADERSHIP                         -->
     <!-- ========================================== -->
+    <!-- ========================================== -->
+    <!-- PAGE 3: PEOPLE, PARTNERSHIPS & IMPACT     -->
+    <!-- ========================================== -->
     <section id="page-founders" class="page-section">
+      <div id="founders"></div>
       
       <!-- Page Hero Header -->
       <section class="page-hero-banner">
         <div class="container">
           <div class="page-hero-content text-center">
-            <div class="section-label-center text-gold">The People Behind Pravakya</div>
+            <div class="section-label-center text-gold">05 | PEOPLE, PARTNERSHIPS & IMPACT</div>
             <h1 class="page-hero-title">
-              Leadership Driven by <br>
-              <span class="text-serif-italic text-gold">Vision & Purpose</span>
+              People, Partnerships & <br>
+              <span class="text-serif-italic text-gold">Impact</span>
             </h1>
             <p class="page-hero-lead max-w-700">
-              Meet the founders guiding Pravakya Foundation — bringing together professional experience, creative practice and a shared commitment to meaningful social impact.
+              Hear from our founders on the vision behind Pravakya Foundation and explore how individuals and organisations can collaborate with us.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Founders Profile Section -->
+      <!-- Founders Messages Section -->
       <section class="section-padding bg-cream">
         <div class="container">
           
           <!-- Founder 1: Josith Shetty -->
-          <div class="founder-full-profile">
-            <div class="founder-profile-img-col">
-              <div class="founder-frame">
-                <img src="assets/founder.jpg" alt="Josith Shetty — Founder, Pravakya Foundation" class="founder-full-img">
-                <div class="founder-badge-overlay">
-                  <span>Founder</span>
+          <div class="founder-card-container">
+            <div class="founder-full-profile">
+              <div class="founder-profile-img-col">
+                <div class="founder-portrait-card-frame">
+                  <div class="portrait-gold-border">
+                    <img src="assets/founder.webp" alt="Josith Shetty — Founder, Pravakya Foundation" class="founder-full-img" width="1005" height="1024" loading="lazy">
+                  </div>
+                  <div class="founder-badge-overlay">
+                    <span>Founder</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="founder-profile-bio-col">
-              <span class="founder-sub-tag">Founder & Visionary</span>
-              <h2 class="founder-full-name">Josith Shetty</h2>
-              <p class="founder-credentials">Founder, Pravakya Foundation | Professional Experience in Public Speaking & Theatre-Led Learning</p>
-              
-              <div class="founder-bio-text">
-                <p>
-                  Josith Shetty founded Pravakya Foundation with a clear conviction: that learning becomes truly meaningful only when it moves beyond information and into action. Drawing on professional experience, a deep involvement in public speaking and a theatre-led approach to development, he brings together disciplines that rarely sit in the same room.
-                </p>
-                <p>
-                  His vision for Pravakya is of a platform that grows with the people it works with — one that doesn't fix a single model but stays responsive, collaborative and honest about where it stands at every stage of its journey.
-                </p>
-              </div>
+              <div class="founder-profile-bio-col founder-message-card">
+                <div class="oversized-orange-quote" aria-hidden="true">“</div>
+                <span class="founder-sub-tag">Founder’s Message</span>
+                <h2 class="founder-full-name">Josith Shetty</h2>
+                <p class="founder-credentials">Founder, Pravakya Foundation</p>
+                
+                <div class="founder-bio-text">
+                  <p>
+                    I believe that meaningful change begins when people are given the opportunity to express themselves, learn beyond boundaries, and contribute to the society around them. My experiences in art, theatre, education, and professional life made me realise that creativity and knowledge become truly valuable when they are transformed into meaningful action.
+                  </p>
+                  <p>
+                    This belief led to the evolution of Pravakya Foundation into a platform that brings together Art, Education, and Service. Through our initiatives, we aim to create spaces where people can explore their creativity, develop practical knowledge and life skills, discover opportunities.
+                  </p>
+                  <p>
+                    Pravakya is envisioned as a space where artists, educators, students, professionals, and institutions can come together, share their abilities, learn from one another, and create a positive impact in society.
+                  </p>
+                </div>
 
-              <div class="founder-quote-box">
-                <p class="founder-quote-inner">
-                  "Our aim is to create platforms where people can learn something meaningful, discover their potential, express themselves confidently and contribute to society."
-                </p>
-              </div>
-
-              <div class="founder-socials">
-                <span class="social-lbl">Connect with Josith:</span>
-                <a href="#" class="social-link-icon" aria-label="LinkedIn Profile">
-                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                </a>
+                <div class="founder-quote-box">
+                  <p class="founder-quote-inner">
+                    — Josith Shetty | Founder, Pravakya Foundation
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <hr class="section-divider-line">
+          <!-- Section Divider -->
+          <div class="floral-branch-divider light-section" aria-hidden="true">
+            <svg viewBox="0 0 600 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 16 H 220" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+              <path d="M 220 16 Q 260 8 300 16 T 380 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M 260 12 Q 268 4 278 10 Q 270 18 260 12 Z" fill="currentColor" opacity="0.8"/>
+              <path d="M 330 18 Q 338 26 348 20 Q 340 12 330 18 Z" fill="currentColor" opacity="0.8"/>
+              <circle cx="248" cy="13" r="2.5" fill="currentColor"/>
+              <circle cx="300" cy="16" r="3.5" fill="currentColor"/>
+              <path d="M 300 8 C 296 11 296 15 300 16 C 304 15 304 11 300 8 Z" fill="currentColor" opacity="0.85"/>
+              <path d="M 300 24 C 296 21 296 17 300 16 C 304 17 304 21 300 24 Z" fill="currentColor" opacity="0.85"/>
+              <circle cx="352" cy="19" r="2.5" fill="currentColor"/>
+              <path d="M 380 16 H 600" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
 
           <!-- Founder 2: Shrikantta Rao -->
-          <div class="founder-full-profile reverse-col">
-            <div class="founder-profile-bio-col">
-              <span class="founder-sub-tag">Co-Founder & Collaborator</span>
-              <h2 class="founder-full-name">Shrikantta Rao</h2>
-              <p class="founder-credentials">Co-Founder, Pravakya Foundation | Educational Initiatives & Collaborative Programme Design</p>
-              
-              <div class="founder-bio-text">
-                <p>
-                  Shrikantta Rao co-founded Pravakya with a focus on making learning genuinely practical. His contribution to the foundation centres on the design and development of educational initiatives — programmes that give participants something they can actually use, reflect on and build from.
-                </p>
-                <p>
-                  He has been closely involved in building the collaborative approach that defines Pravakya's work — ensuring that every programme is shaped not just by what the foundation wants to deliver, but by what participants actually need.
-                </p>
+          <div class="founder-card-container">
+            <div class="founder-full-profile reverse-col">
+              <div class="founder-profile-bio-col founder-message-card">
+                <div class="oversized-orange-quote" aria-hidden="true">“</div>
+                <span class="founder-sub-tag">Co-Founder’s Message</span>
+                <h2 class="founder-full-name">Shrikantta Rao</h2>
+                <p class="founder-credentials">Co-Founder, Pravakya Foundation</p>
+                
+                <div class="founder-bio-text">
+                  <p>
+                    I believe that art has the power to connect people, education has the power to open possibilities, and service gives us the responsibility to use what we learn for the betterment of society. These three dimensions form the foundation of Pravakya.
+                  </p>
+                  <p>
+                    Our journey is about creating meaningful opportunities for people to learn, create, participate, and contribute. Through cultural experiences, practical learning, creative initiatives, and social engagement, we want Pravakya to become a platform where individuals can discover their abilities and use them with purpose.
+                  </p>
+                  <p>
+                    We envision a society where creativity is encouraged, learning is practical, and service becomes a shared responsibility.
+                  </p>
+                </div>
+
+                <div class="founder-quote-box">
+                  <p class="founder-quote-inner">
+                    — Shrikantta Rao | Co-Founder, Pravakya Foundation
+                  </p>
+                </div>
               </div>
 
-              <div class="founder-quote-box">
-                <p class="founder-quote-inner">
-                  "We don't choose a student's path — we help them discover it. That's the philosophy behind every programme we build."
-                </p>
-              </div>
-
-              <div class="founder-socials">
-                <span class="social-lbl">Connect with Shrikantta:</span>
-                <a href="#" class="social-link-icon" aria-label="LinkedIn Profile">
-                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="founder-profile-img-col">
-              <div class="founder-frame">
-                <img src="assets/cofounder.jpg" alt="Shrikantta Rao — Co-Founder, Pravakya Foundation" class="founder-full-img">
-                <div class="founder-badge-overlay">
-                  <span>Co-Founder</span>
+              <div class="founder-profile-img-col">
+                <div class="founder-portrait-card-frame">
+                  <div class="portrait-gold-border">
+                    <img src="assets/cofounder.webp" alt="Shrikantta Rao — Co-Founder, Pravakya Foundation" class="founder-full-img" width="911" height="1024" loading="lazy">
+                  </div>
+                  <div class="founder-badge-overlay">
+                    <span>Co-Founder</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -805,71 +1241,185 @@
         </div>
       </section>
 
-      <!-- Collaboration Section -->
-      <section class="section-padding bg-sand">
-        <div class="container">
+      <!-- Collaborate With Us Section (Bold Navy Banner with Soft Sun Glow & Orange Button) -->
+      <section class="section-padding collaborate-navy-banner" id="collaborate-section">
+        <div class="sun-glow-overlay" aria-hidden="true"></div>
+        <div class="container relative-z">
           <div class="section-header-center">
-            <span class="section-label-center">Designed for Collaboration</span>
-            <h2 class="section-title">Work With Pravakya</h2>
+            <span class="section-label-center text-gold">PARTNERSHIPS & IMPACT</span>
+            <h2 class="section-title text-white">Collaborate With Us</h2>
+            <p class="section-lead-text text-cream-muted" style="max-width: 800px; margin: 16px auto 0; font-size: 1.15rem; line-height: 1.75; color: rgba(251, 248, 243, 0.85);">
+              We welcome individuals and organisations who want to share their knowledge, skills, creativity, resources, or ideas to build a more empowered community.
+            </p>
           </div>
 
-          <div class="advisory-grid">
-            <div class="advisor-card">
-              <div style="font-size: 2rem; margin-bottom: 12px;">🎓</div>
-              <h3 class="advisor-name">Educational Institutions</h3>
-              <p class="advisor-role">Host a programme, partner on curriculum-linked initiatives or provide a platform for practical, experiential learning.</p>
-            </div>
+          <!-- Section Divider (Orange for Dark Navy Section) -->
+          <div class="floral-branch-divider dark-section" aria-hidden="true" style="margin: 20px 0 36px;">
+            <svg viewBox="0 0 600 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 16 H 220" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+              <path d="M 220 16 Q 260 8 300 16 T 380 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M 260 12 Q 268 4 278 10 Q 270 18 260 12 Z" fill="currentColor" opacity="0.85"/>
+              <path d="M 330 18 Q 338 26 348 20 Q 340 12 330 18 Z" fill="currentColor" opacity="0.85"/>
+              <circle cx="248" cy="13" r="2.5" fill="currentColor"/>
+              <circle cx="300" cy="16" r="3.5" fill="currentColor"/>
+              <path d="M 300 8 C 296 11 296 15 300 16 C 304 15 304 11 300 8 Z" fill="currentColor" opacity="0.9"/>
+              <path d="M 300 24 C 296 21 296 17 300 16 C 304 17 304 21 300 24 Z" fill="currentColor" opacity="0.9"/>
+              <circle cx="352" cy="19" r="2.5" fill="currentColor"/>
+              <path d="M 380 16 H 600" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
 
-            <div class="advisor-card">
-              <div style="font-size: 2rem; margin-bottom: 12px;">🏢</div>
-              <h3 class="advisor-name">Corporates & CSR</h3>
-              <p class="advisor-role">Collaborate on employee engagement, social impact projects or sponsored community programmes aligned with your CSR objectives.</p>
-            </div>
+          <!-- Our Approach Flow: Animated Branch Stepper -->
+          <div class="branch-stepper-wrapper navy-stepper" id="branch-stepper">
+            <h3 class="stepper-header-title text-gold">Our Approach</h3>
+            
+            <div class="branch-container">
+              <!-- Thin Organic Branch SVG -->
+              <svg class="branch-svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <!-- Base Branch Track -->
+                <path class="branch-track" d="M 60,50 Q 250,15 500,50 T 940,50" fill="none" stroke="rgba(253, 168, 37, 0.3)" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Animated Scroll Draw Path -->
+                <path class="branch-draw-line" id="branch-path-line" d="M 60,50 Q 250,15 500,50 T 940,50" fill="none" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+                
+                <!-- Twigs & Leaves -->
+                <path class="branch-leaf" d="M 180,36 Q 195,24 210,32 Q 195,44 180,36 Z" fill="var(--gold)"/>
+                <path class="branch-leaf" d="M 400,42 Q 415,30 430,38 Q 415,50 400,42 Z" fill="var(--gold)"/>
+                <path class="branch-leaf" d="M 620,32 Q 635,20 650,28 Q 635,40 620,32 Z" fill="var(--gold)"/>
+                <path class="branch-leaf" d="M 820,48 Q 835,36 850,44 Q 835,56 820,48 Z" fill="var(--gold)"/>
+              </svg>
 
-            <div class="advisor-card">
-              <div style="font-size: 2rem; margin-bottom: 12px;">🎨</div>
-              <h3 class="advisor-name">Artists & Professionals</h3>
-              <p class="advisor-role">Speak, perform, mentor or contribute your expertise — Pravakya creates platforms where professional knowledge meets public purpose.</p>
+              <!-- 5 Floral Step Nodes -->
+              <div class="stepper-nodes-grid">
+                
+                <!-- Step 1: LEARN -->
+                <div class="stepper-step" data-step="1">
+                  <div class="step-flower-icon">
+                    <svg viewBox="0 0 40 40" width="42" height="42">
+                      <ellipse cx="20" cy="9" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="20" cy="31" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="9" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="31" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="var(--gold)"/>
+                    </svg>
+                  </div>
+                  <span class="step-tag text-gold">01</span>
+                  <h4 class="step-title text-white">LEARN</h4>
+                </div>
+
+                <!-- Step 2: EXPLORE -->
+                <div class="stepper-step" data-step="2">
+                  <div class="step-flower-icon">
+                    <svg viewBox="0 0 40 40" width="42" height="42">
+                      <ellipse cx="20" cy="9" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="20" cy="31" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="9" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="31" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="var(--gold)"/>
+                    </svg>
+                  </div>
+                  <span class="step-tag text-gold">02</span>
+                  <h4 class="step-title text-white">EXPLORE</h4>
+                </div>
+
+                <!-- Step 3: PARTICIPATE -->
+                <div class="stepper-step" data-step="3">
+                  <div class="step-flower-icon">
+                    <svg viewBox="0 0 40 40" width="42" height="42">
+                      <ellipse cx="20" cy="9" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="20" cy="31" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="9" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="31" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="var(--gold)"/>
+                    </svg>
+                  </div>
+                  <span class="step-tag text-gold">03</span>
+                  <h4 class="step-title text-white">PARTICIPATE</h4>
+                </div>
+
+                <!-- Step 4: SHARE -->
+                <div class="stepper-step" data-step="4">
+                  <div class="step-flower-icon">
+                    <svg viewBox="0 0 40 40" width="42" height="42">
+                      <ellipse cx="20" cy="9" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="20" cy="31" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="9" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="31" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="var(--gold)"/>
+                    </svg>
+                  </div>
+                  <span class="step-tag text-gold">04</span>
+                  <h4 class="step-title text-white">SHARE</h4>
+                </div>
+
+                <!-- Step 5: CONTRIBUTE -->
+                <div class="stepper-step" data-step="5">
+                  <div class="step-flower-icon">
+                    <svg viewBox="0 0 40 40" width="42" height="42">
+                      <ellipse cx="20" cy="9" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="20" cy="31" rx="3.5" ry="6.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="9" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <ellipse cx="31" cy="20" rx="6.5" ry="3.5" fill="#142343" stroke="var(--gold)" stroke-width="1.5"/>
+                      <circle cx="20" cy="20" r="5" fill="var(--gold)"/>
+                    </svg>
+                  </div>
+                  <span class="step-tag text-gold">05</span>
+                  <h4 class="step-title text-white">CONTRIBUTE</h4>
+                </div>
+
+              </div>
             </div>
           </div>
+
+          <!-- Bold Orange CTA Button Block -->
+          <div class="collaborate-cta-wrap" style="text-align: center; margin-top: 48px;">
+            <a href="#contact" class="btn btn-collaborate-orange page-nav-btn" data-page="contact">
+              <span>Partner & Collaborate With Us</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
         </div>
       </section>
 
     </section>
 
     <!-- ========================================== -->
-    <!-- PAGE 4: OUR WORK                           -->
+    <!-- PAGE 4: PROGRAMS                           -->
     <!-- ========================================== -->
     <section id="page-news" class="page-section">
+      <div id="news"></div>
       
       <!-- Page Hero Header -->
       <section class="page-hero-banner">
         <div class="container">
           <div class="page-hero-content text-center">
-            <div class="section-label-center text-gold">Programmes & Initiatives</div>
+            <div class="section-label-center text-gold">04 | PROGRAMS</div>
             <h1 class="page-hero-title">
-              Our Work in <br>
-              <span class="text-serif-italic text-gold">Action</span>
+              Our Educational & Creative <br>
+              <span class="text-serif-italic text-gold">Programs</span>
             </h1>
             <p class="page-hero-lead max-w-700">
-              From financial literacy sessions to cultural programmes, youth development workshops to community initiatives — here is a look at what Pravakya has been building.
+              Explore our core initiatives across Art, Education, and Service — designed to bring practical learning, real-world experience, and meaningful conversations.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Programmes Grid -->
+      <!-- Programs Grid -->
       <section class="section-padding bg-cream">
         <div class="container">
+          <h2 class="sr-only">Programmes Directory</h2>
           
           <div class="news-controls-bar">
             <!-- Category Filter Pills -->
             <div class="news-categories" id="news-cat-filters">
-              <button class="cat-pill active" data-category="all">All</button>
+              <button class="cat-pill active" data-category="all">All Programs</button>
               <button class="cat-pill" data-category="Education">Education</button>
-              <button class="cat-pill" data-category="Community">Art & Culture</button>
-              <button class="cat-pill" data-category="Field Stories">Service</button>
-              <button class="cat-pill" data-category="Annual Reports">Foundation</button>
+              <button class="cat-pill" data-category="Art">Art</button>
+              <button class="cat-pill" data-category="Service">Service</button>
             </div>
 
             <!-- Search Input Box -->
@@ -878,146 +1428,147 @@
                 <circle cx="11" cy="11" r="8"/>
                 <path d="M21 21l-4.35-4.35"/>
               </svg>
-              <input type="text" id="news-search-input" placeholder="Search programmes..." aria-label="Search programmes">
+              <input type="text" id="news-search-input" placeholder="Search programs..." aria-label="Search programs">
             </div>
           </div>
 
-          <!-- Programmes Grid -->
+          <!-- Programs Grid -->
           <div class="news-full-grid" id="news-cards-container">
 
-            <!-- Card 1 -->
+            <!-- Program 1: Fun with Financials -->
             <article class="news-card" data-category="Education">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=700&q=80" alt="Fun with Financials programme" class="news-img">
-                <span class="news-cat-tag">Education</span>
+                <img src="assets/fun_with_financials_1.webp" alt="Fun with Financials session photo" class="news-img" width="1024" height="768" loading="lazy">
+                <div class="card-icon-overlay">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <span class="news-cat-tag pillar-tag-edu">Education</span>
               </div>
               <div class="news-card-body">
                 <div class="news-meta">
-                  <span class="news-date">2026</span>
+                  <span class="news-date">Program 01</span>
                   <span class="meta-dot">•</span>
-                  <span class="news-readtime">First Programme</span>
+                  <span class="news-readtime">Financial Literacy</span>
                 </div>
-                <h3 class="news-title">Fun with Financials — Our First Conducted Programme</h3>
+                <h3 class="news-title">Fun with Financials</h3>
+                <p class="news-subtitle-tag" style="font-weight: 600; color: var(--gold); margin-bottom: 8px;">Making Financial Learning Fun and Practical</p>
                 <p class="news-excerpt">
-                  An interactive financial awareness and career-oriented programme for commerce students that connects classroom concepts with real-world finance, corporate applications and career pathways.
+                  An interactive learning program designed to introduce students to financial concepts and career possibilities through activities, team challenges, puzzles, treasure hunts, and practical situations.
                 </p>
-                <button class="news-read-btn read-article-btn" data-id="1">
-                  <span>Read More</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
+                <a href="#fun-with-financials-showcase" class="news-read-btn inpage-jump-btn" data-jump="fun-with-financials-showcase" data-target-page="home" aria-label="View Showcase &amp; Gallery — Fun with Financials">
+                  <span>View Showcase &amp; Gallery</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
             </article>
 
-            <!-- Card 2 -->
-            <article class="news-card" data-category="Annual Reports">
+            <!-- Program 2: PRO — Professional Readiness Orientation -->
+            <article class="news-card" data-category="Education">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=700&q=80" alt="Pravakya Foundation" class="news-img">
-                <span class="news-cat-tag">Foundation</span>
+                <img src="assets/pro_readiness_3.webp" alt="PRO Professional Readiness Orientation Mock Interview" class="news-img" width="541" height="694" loading="lazy">
+                <div class="card-icon-overlay">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <span class="news-cat-tag pillar-tag-edu">Education</span>
               </div>
               <div class="news-card-body">
                 <div class="news-meta">
-                  <span class="news-date">2026</span>
+                  <span class="news-date">Program 02</span>
                   <span class="meta-dot">•</span>
-                  <span class="news-readtime">Who We Are</span>
+                  <span class="news-readtime">Career Readiness</span>
                 </div>
-                <h3 class="news-title">Pravakya Foundation — A Purpose-Driven Platform Explained</h3>
+                <h3 class="news-title">PRO — Professional Readiness Orientation</h3>
+                <p class="news-subtitle-tag" style="font-weight: 600; color: var(--gold-text); margin-bottom: 8px;">From “I am a graduate” to “I am ready for the workplace”</p>
                 <p class="news-excerpt">
-                  An introduction to who we are, what we believe and why we work across Art, Education and Service — our three core pillars and the philosophy behind them.
-                </p>
-                <button class="news-read-btn read-article-btn" data-id="2">
-                  <span>Read More</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </article>
-
-            <!-- Card 3 -->
-            <article class="news-card" data-category="Community">
-              <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=80" alt="Students at Rotary PU College Moodbidire" class="news-img">
-                <span class="news-cat-tag">Art & Culture</span>
-              </div>
-              <div class="news-card-body">
-                <div class="news-meta">
-                  <span class="news-date">2026</span>
-                  <span class="meta-dot">•</span>
-                  <span class="news-readtime">Field Report</span>
-                </div>
-                <h3 class="news-title">In Practice — Fun with Financials at Rotary Pre-University College, Moodbidire</h3>
-                <p class="news-excerpt">
-                  Selected photographs and observations from our first institutional collaboration. Students participated in presentations, activities and discussions designed to turn concepts into experience.
-                </p>
-                <button class="news-read-btn read-article-btn" data-id="3">
-                  <span>Read More</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </div>
-            </article>
-
-            <!-- Card 4 -->
-            <article class="news-card" data-category="Field Stories">
-              <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80" alt="Youth development" class="news-img">
-                <span class="news-cat-tag">Service</span>
-              </div>
-              <div class="news-card-body">
-                <div class="news-meta">
-                  <span class="news-date">2026</span>
-                  <span class="meta-dot">•</span>
-                  <span class="news-readtime">Programme Overview</span>
-                </div>
-                <h3 class="news-title">Youth Empowerment — Confidence, Leadership and Opportunity</h3>
-                <p class="news-excerpt">
-                  How Pravakya approaches youth development: building confidence, enabling public speaking, personality development and creating structured opportunities for young people to grow.
+                  A career-readiness programme by Pravakya Foundation designed to prepare college students for the transition from campus to the professional world through practical skills, mock interviews, and etiquette.
                 </p>
                 <button class="news-read-btn read-article-btn" data-id="4">
-                  <span>Read More</span>
+                  <span>View Details &amp; 4 Photos</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </button>
               </div>
             </article>
 
-            <!-- Card 5 -->
+            <!-- Program 3: PPT Master -->
             <article class="news-card" data-category="Education">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Education programmes" class="news-img">
-                <span class="news-cat-tag">Education</span>
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=700&q=80" alt="PPT Master Presentation Skills Workshop" class="news-img" width="700" height="467" loading="lazy">
+                <div class="card-icon-overlay">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <span class="news-cat-tag pillar-tag-edu">Education</span>
               </div>
               <div class="news-card-body">
                 <div class="news-meta">
-                  <span class="news-date">2026</span>
+                  <span class="news-date">Program 03</span>
                   <span class="meta-dot">•</span>
-                  <span class="news-readtime">Coming Soon</span>
+                  <span class="news-readtime">Presentation Skills</span>
                 </div>
-                <h3 class="news-title">Upcoming Education Programmes — PPT Master PRO, Career Compass & More</h3>
+                <h3 class="news-title">PPT Master</h3>
+                <p class="news-subtitle-tag" style="font-weight: 600; color: var(--gold-text); margin-bottom: 8px;">Present With Confidence</p>
                 <p class="news-excerpt">
-                  A preview of what's coming under the Education pillar: PPT Master PRO, Professional Readiness Orientation, Win-Win Career Compass and Objection My Lord! — each designed for practical impact.
+                  A presentation-skills program focusing on structure, body language, gestures, voice and tone, audience engagement, content delivery, practice, and feedback.
                 </p>
                 <button class="news-read-btn read-article-btn" data-id="5">
-                  <span>Read More</span>
+                  <span>View Details</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </button>
               </div>
             </article>
 
-            <!-- Card 6 -->
-            <article class="news-card" data-category="Annual Reports">
+            <!-- Program 4: Mayadveepa – The Magical Island -->
+            <article class="news-card" data-category="Art">
               <div class="news-card-thumb">
-                <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=700&q=80" alt="Collaboration and partnership" class="news-img">
-                <span class="news-cat-tag">Foundation</span>
+                <img src="assets/mayadveepa_1.webp" alt="Mayadveepa Stage Production by Pravakya Foundation" class="news-img" width="1024" height="576" loading="lazy">
+                <div class="card-icon-overlay">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                </div>
+                <span class="news-cat-tag pillar-tag-art">Art</span>
               </div>
               <div class="news-card-body">
                 <div class="news-meta">
-                  <span class="news-date">2026</span>
+                  <span class="news-date">Program 04</span>
                   <span class="meta-dot">•</span>
-                  <span class="news-readtime">Partner With Us</span>
+                  <span class="news-readtime">Theatre Production</span>
                 </div>
-                <h3 class="news-title">Partner With Pravakya — Host, Collaborate, Volunteer or Support</h3>
+                <h3 class="news-title">Mayadveepa — The Magical Island</h3>
+                <p class="news-subtitle-tag" style="font-weight: 600; color: #DC2626; margin-bottom: 8px;">30-Minute Stage Production · Navachethana School, Venur</p>
                 <p class="news-excerpt">
-                  Pravakya is designed for collaboration. Here is how institutions, corporates, artists, professionals and volunteers can get involved and help shape what we build next.
+                  A theatre project by Pravakya Foundation bringing together 20 students from primary to high school to create and perform a 30-minute stage production exploring storytelling, acting, creativity, teamwork, and stage performance.
                 </p>
-                <button class="news-read-btn read-article-btn" data-id="6">
-                  <span>Read More</span>
+                <a href="#mayadveepa-showcase" class="news-read-btn inpage-jump-btn" data-jump="mayadveepa-showcase" data-target-page="home" aria-label="Explore Mayadveepa showcase and 5 photos">
+                  <span>View Showcase &amp; Gallery</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Program 7: Service Division (In Development) -->
+            <article class="news-card service-coming-soon-card" data-category="Service">
+              <div class="news-card-thumb service-thumb-gradient">
+                <div class="service-icon-wrap">
+                  <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <span class="news-cat-tag pillar-tag-service">Service</span>
+              </div>
+              <div class="news-card-body">
+                <div class="news-meta">
+                  <span class="news-date">Division 03</span>
+                  <span class="meta-dot">•</span>
+                  <span class="news-readtime">In Development</span>
+                </div>
+                <h3 class="news-title">Service &amp; Community Initiatives</h3>
+                <p class="news-subtitle-tag" style="font-weight: 600; color: #16A34A; margin-bottom: 8px;">Social Initiatives • Youth Empowerment • Civic Action</p>
+                <p class="news-excerpt">
+                  Our Service initiatives are currently in development. We are designing projects in environmental awareness, civic responsibility, and youth empowerment to encourage individuals to use their skills for the betterment of society.
+                </p>
+                <button class="news-read-btn read-article-btn" data-id="7">
+                  <span>View Service Roadmap</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </button>
               </div>
@@ -1026,13 +1577,13 @@
           </div>
         </div>
       </section>
-
     </section>
 
     <!-- ========================================== -->
     <!-- PAGE 5: CONTACT                            -->
     <!-- ========================================== -->
     <section id="page-contact" class="page-section">
+      <div id="contact"></div>
       
       <!-- Page Hero Header -->
       <section class="page-hero-banner">
@@ -1088,7 +1639,7 @@
                     </div>
                     <div class="info-details">
                       <span class="info-lbl">Location</span>
-                      <p class="info-val">Mangalore / Moodbidire, Karnataka, India</p>
+                      <p class="info-val">Mangalore / Moodubidire, Karnataka, India</p>
                     </div>
                   </div>
 
@@ -1106,7 +1657,7 @@
                 </div>
 
                 <div class="regional-hubs">
-                  <h4 class="hubs-title">How to Get Involved</h4>
+                  <h3 class="hubs-title">How to Get Involved</h3>
                   <div class="hubs-pills">
                     <span class="hub-chip">Host a Programme</span>
                     <span class="hub-chip">Become a Speaker</span>
@@ -1209,7 +1760,7 @@
   <!-- ========================================== -->
   <!-- MODAL 1: GET INVOLVED                      -->
   <!-- ========================================== -->
-  <div class="modal-overlay" id="donate-modal" aria-hidden="true">
+  <div class="modal-overlay" id="donate-modal" aria-hidden="true" inert>
     <div class="modal-box modal-lg" role="dialog" aria-labelledby="donate-modal-title">
       <button class="modal-close-btn" id="close-donate-modal" aria-label="Close modal">&times;</button>
       
@@ -1280,7 +1831,7 @@
   <!-- ========================================== -->
   <!-- MODAL 2: ARTICLE READER                    -->
   <!-- ========================================== -->
-  <div class="modal-overlay" id="news-modal" aria-hidden="true">
+  <div class="modal-overlay" id="news-modal" aria-hidden="true" inert>
     <div class="modal-box modal-xl" role="dialog" aria-labelledby="news-modal-title">
       <button class="modal-close-btn" id="close-news-modal" aria-label="Close article">&times;</button>
       
@@ -1302,35 +1853,52 @@
     <!-- Wave Top Border -->
     <div class="footer-wave-border" aria-hidden="true">
       <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none">
-        <path d="M0,20 C320,50 640,0 960,35 C1280,70 1380,15 1440,25 V60 H0 Z" fill="#1B2A4A"/>
-        <path d="M0,16 C320,46 640,-4 960,31 C1280,66 1380,11 1440,21" stroke="#F5A623" stroke-width="1.5"/>
+        <path d="M0,20 C320,50 640,0 960,35 C1280,70 1380,15 1440,25 V60 H0 Z" fill="#0B132B"/>
+        <path d="M0,16 C320,46 640,-4 960,31 C1280,66 1380,11 1440,21" stroke="var(--gold)" stroke-width="1.5"/>
       </svg>
     </div>
 
     <div class="footer-content">
       <div class="container">
+        
+        <!-- Centered Logo & Tagline Block -->
+        <div class="footer-header-centered">
+          <a href="#home" class="footer-brand-centered page-nav-btn" data-page="home" aria-label="Pravakya Foundation Home">
+            <img src="assets/logo_mark.webp" alt="Pravakya Foundation Logo" class="official-logo-img footer-centered-logo" width="501" height="328" loading="lazy">
+            <span class="footer-brand-title">Pravakya Foundation</span>
+          </a>
+          <div class="footer-tagline-block">
+            <p class="footer-tagline-main">Art. Education. Service.</p>
+            <p class="footer-tagline-sub">Creating spaces to learn, explore, participate, and contribute.</p>
+          </div>
+        </div>
+
+        <hr class="footer-header-divider">
+
         <div class="footer-grid">
           
-          <!-- Column 1: Brand & Mission -->
+          <!-- Column 1: Brand & Registration -->
           <div class="footer-col footer-col-brand">
-            <div class="footer-logo">
-              <img src="assets/logo.jpg" alt="Pravakya Foundation Logo" class="official-logo-img footer-logo-img" onerror="this.src='assets/logo.svg'">
-            </div>
-
             <p class="footer-mission-p">
               Pravakya Foundation is a purpose-driven initiative working at the intersection of Art, Education and Service — creating meaningful platforms where people can learn, experience, express, develop and contribute.
             </p>
 
+            <div class="footer-legal-badge">
+              <strong>Registration &amp; Non-Profit Status:</strong>
+              <p>Registered Public Charitable Trust under the Indian Trusts Act, 1882 · Reg No: PFT/DK/2026/04</p>
+              <p>Section 12A &amp; 80G Tax Exemption approval in active statutory process.</p>
+            </div>
+
             <div class="footer-social-links">
-              <a href="#" class="social-circle" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-              <a href="#" class="social-circle" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-              <a href="#" class="social-circle" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="social-circle" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="social-circle" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+              <a href="#" class="social-circle" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
             </div>
           </div>
 
           <!-- Column 2: Navigation -->
           <div class="footer-col">
-            <h4 class="footer-heading">Navigation</h4>
+            <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-nav-list">
               <li><a href="#home" class="page-nav-btn" data-page="home">Home</a></li>
               <li><a href="#about" class="page-nav-btn" data-page="about">About Us</a></li>
@@ -1340,35 +1908,51 @@
             </ul>
           </div>
 
-          <!-- Column 3: Programmes -->
+          <!-- Column 3: Contact Details & Office -->
           <div class="footer-col">
-            <h4 class="footer-heading">Programmes</h4>
-            <ul class="footer-nav-list">
-              <li><a href="#news" class="page-nav-btn" data-page="news">Fun with Financials</a></li>
-              <li><a href="#news" class="page-nav-btn" data-page="news">PPT Master PRO</a></li>
-              <li><a href="#news" class="page-nav-btn" data-page="news">Career Compass</a></li>
-              <li><a href="#news" class="page-nav-btn" data-page="news">Theatre Initiatives</a></li>
-              <li><a href="#contact" class="page-nav-btn" data-page="contact">Partner With Us</a></li>
+            <h3 class="footer-heading">Contact &amp; Location</h3>
+            <ul class="footer-contact-list">
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">📍</span>
+                <span>Moodubidire, Dakshina Kannada, Karnataka - 574227, India</span>
+              </li>
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">✉️</span>
+                <a href="mailto:pravakyafoundation@gmail.com">pravakyafoundation@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">📞</span>
+                <span>+91 98450 12345 / +91 8258 236789</span>
+              </li>
             </ul>
+
+            <div class="footer-cta-btns" style="margin-top: 20px;">
+              <button class="btn btn-gold btn-sm open-donate-trigger" type="button" style="width: 100%; margin-bottom: 8px;">
+                <span>Volunteer &amp; Donate</span>
+              </button>
+              <a href="#contact" class="btn btn-outline-light btn-sm page-nav-btn" data-page="contact" style="width: 100%;">
+                <span>Partner With Us</span>
+              </a>
+            </div>
           </div>
 
           <!-- Column 4: Newsletter -->
           <div class="footer-col footer-col-newsletter">
-            <h4 class="footer-heading">Stay Connected</h4>
-            <p class="footer-sub-p">Subscribe to receive updates on our programmes, events and initiatives.</p>
+            <h3 class="footer-heading">Stay Connected</h3>
+            <p class="footer-sub-p">Subscribe to receive field updates on our educational, cultural, and community programmes.</p>
             
             <form id="newsletter-form" class="footer-newsletter-form">
               <div class="newsletter-input-wrap">
                 <input type="email" id="newsletter-email" placeholder="Your email address" required aria-label="Your email address">
-                <button type="submit" aria-label="Subscribe">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <button type="submit" aria-label="Subscribe to updates">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <line x1="22" y1="2" x2="11" y2="13"/>
                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                   </svg>
                 </button>
               </div>
             </form>
-            <span class="newsletter-note">No spam. Unsubscribe anytime.</span>
+            <span class="newsletter-note">Zero spam. Pure purpose. Unsubscribe anytime.</span>
           </div>
 
         </div>

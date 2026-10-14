@@ -1,0 +1,20 @@
+{
+  "name": "pravakya-foundation",
+  "version": "1.0.0",
+  "description": "Official website for Pravakya Foundation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "pravakya",
+    "foundation",
+    "education",
+    "theatre",
+    "ngo"
+  ],
+  "author": "Pravakya Foundation",
+  "license": "ISC"
+}

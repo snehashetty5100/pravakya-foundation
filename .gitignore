@@ -1,0 +1,19 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel & build outputs
+.vercel
+dist/
+build/
+
+# Local reports & scratch files
+lighthouse-report.json
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
