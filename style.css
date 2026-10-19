@@ -75,6 +75,13 @@
   padding: 0;
 }
 
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   scroll-padding-top: calc(var(--header-h) + 16px);
   scroll-behavior: smooth;
@@ -449,6 +456,7 @@ button {
   color: var(--navy-muted);
   border-radius: var(--radius-full);
   transition: color var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -679,9 +687,9 @@ button {
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .hero-title {
@@ -776,29 +784,32 @@ button {
 .hero-visual {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  min-height: 440px;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .sunrise-glow {
   position: absolute;
-  width: 260px;
-  height: 260px;
+  width: 280px;
+  height: 280px;
   background: radial-gradient(circle, rgba(245, 166, 35, 0.16) 0%, rgba(245, 166, 35, 0) 65%);
   border-radius: 50%;
   filter: blur(35px);
   z-index: 0;
-  opacity: 0.4;
-  top: 15%;
-  right: 15%;
+  opacity: 0.45;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .hero-illustration-wrapper {
   position: relative;
   width: 100%;
-  max-width: 400px;
-  margin-left: auto;
+  max-width: 320px;
+  margin: 0 auto;
   z-index: 1;
   transition: transform var(--transition-slow);
 }
@@ -807,24 +818,27 @@ button {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 10px 20px rgba(27, 42, 74, 0.06));
+  display: block;
 }
 
 /* Hero Three Separate Clickable Programme Boxes (Not under one roof) */
 .hero-boxes-trio {
-  position: absolute;
-  bottom: -18px;
-  left: -90px;
-  display: flex;
+  width: 100%;
+  max-width: 530px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  margin-top: -24px;
+  position: relative;
   z-index: 3;
 }
 
 .hero-prog-box {
-  width: 162px;
+  width: 100%;
   background-color: var(--cream);
-  padding: 10px;
+  padding: 9px;
   border-radius: var(--radius-md);
-  box-shadow: 0 12px 28px rgba(20, 35, 67, 0.12);
+  box-shadow: 0 10px 24px rgba(20, 35, 67, 0.10);
   border: 1.5px solid var(--gold);
   text-decoration: none;
   color: inherit;
@@ -839,8 +853,8 @@ button {
 }
 
 .hero-prog-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 36px rgba(20, 35, 67, 0.2), 0 0 0 1px var(--gold);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(20, 35, 67, 0.18), 0 0 0 1px var(--gold);
   border-color: var(--gold-dark);
 }
 
@@ -852,7 +866,7 @@ button {
 .prog-box-thumb {
   position: relative;
   width: 100%;
-  height: 96px;
+  height: 92px;
   overflow: hidden;
   border-radius: var(--radius-sm);
   margin-bottom: 7px;
@@ -875,6 +889,7 @@ button {
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 0;
 }
 
 .prog-box-meta {
@@ -885,7 +900,7 @@ button {
 }
 
 .prog-box-tag {
-  font-size: 0.60rem;
+  font-size: 0.62rem;
   font-weight: 700;
   color: var(--gold-text);
   text-transform: uppercase;
@@ -902,6 +917,7 @@ button {
   transition: transform 0.2s ease;
   margin-left: 4px;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .hero-prog-box:hover .prog-box-arrow {
@@ -910,7 +926,7 @@ button {
 }
 
 .prog-box-title {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--navy);
   line-height: 1.25;
@@ -921,7 +937,7 @@ button {
 }
 
 .prog-box-sub {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   margin: 0;
   white-space: nowrap;
@@ -2670,27 +2686,45 @@ button {
    14. RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
+  .nav-list {
+    gap: 4px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.90rem;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
 
   .hero-visual {
-    order: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-illustration-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
   }
 
   .hero-boxes-trio {
-    position: static;
-    margin-top: 24px;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 520px;
+    margin: -16px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
 
   .hero-prog-box {
-    width: calc(33.333% - 10px);
-    min-width: 140px;
-    max-width: 180px;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
   }
 
   .pillars-grid {
@@ -4461,11 +4495,6 @@ button {
 }
 
 @media (max-width: 1024px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
   .pillars-grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -4548,7 +4577,7 @@ button {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .container {
     padding: 0 16px;
   }
@@ -4562,8 +4591,8 @@ button {
   }
 
   .brand-wordmark {
-    font-size: 1.05rem;
-    max-width: 170px;
+    font-size: 0.98rem;
+    max-width: 190px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -4582,12 +4611,17 @@ button {
     font-size: 1.85rem !important;
   }
 
+  .hero-illustration-wrapper {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
   .hero-boxes-trio {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   .hero-prog-box {
