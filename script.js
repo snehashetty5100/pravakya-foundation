@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       divisionBadge: "Education Division",
       flagshipBadge: "First Conducted Programme",
       codeBadge: "SS0326",
-      title: "Fun with Financials — Making Finance Practical & Meaningful",
+      title: "Fun with Financials - Making Finance Practical & Meaningful",
       leadSubtitle: "An interactive financial literacy workshop connecting commerce students to real-world business economics, stock market fundamentals, and career opportunities in finance.",
       date: "Conducted Programme 01",
       readTime: "Education Pillar",
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <blockquote class="article-blockquote">
           "Education becomes meaningful when young minds discover that finance is not a scary ledger of rules, but a practical language for making smart choices in life and business."
-          <span class="quote-author">— Pravakya Foundation Education Initiative</span>
+          <span class="quote-author">- Pravakya Foundation Education Initiative</span>
         </blockquote>
 
         <h3 class="modal-subheading" style="margin-top: 32px;">Core Programme Modules &amp; Highlights</h3>
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <h4>Income Statements &amp; Grassroots Business Math</h4>
             </div>
             <p>
-              Students broke down real-world income statements using intuitive examples like local tea shop and small enterprise economics — exploring revenue streams, fixed vs variable costs, overheads, margins, gross profit, and net profit.
+              Students broke down real-world income statements using intuitive examples like local tea shop and small enterprise economics - exploring revenue streams, fixed vs variable costs, overheads, margins, gross profit, and net profit.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <h4>Interactive Fun-Time Activities &amp; Team Puzzles</h4>
             </div>
             <p>
-              Full auditorium participation with interactive group puzzles, financial quizzes, competitive team exercises, and rapid problem-solving — proving that commerce learning can be exhilarating and collaborative.
+              Full auditorium participation with interactive group puzzles, financial quizzes, competitive team exercises, and rapid problem-solving - proving that commerce learning can be exhilarating and collaborative.
             </p>
           </div>
 
@@ -87,14 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-gallery-section" style="margin-top: 40px;">
           <div class="modal-gallery-header">
             <div>
-              <h3 class="modal-subheading" style="margin-bottom: 4px;">Session Photo Gallery — Rotary PU College, Moodubidire</h3>
+              <h3 class="modal-subheading" style="margin-bottom: 4px;">Session Photo Gallery - Rotary PU College, Moodubidire</h3>
               <p class="gallery-subtext">Click on any photo below to view full-screen in high resolution</p>
             </div>
             <span class="gallery-count-pill">5 High-Res Photos</span>
           </div>
 
           <div class="modal-gallery-grid">
-            <div class="modal-gallery-card" onclick="openImageLightbox('assets/fun_with_financials_1.webp', 'Income Statement Presentation — Practical Economics at Rotary PU College')">
+            <div class="modal-gallery-card" onclick="openImageLightbox('assets/fun_with_financials_1.webp', 'Income Statement Presentation - Practical Economics at Rotary PU College')">
               <div class="modal-gallery-thumb-wrap">
                 <img src="assets/fun_with_financials_1.webp" alt="Income Statement presentation" class="modal-gallery-img">
                 <span class="modal-zoom-hint">🔍 Expand</span>
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             </div>
 
-            <div class="modal-gallery-card" onclick="openImageLightbox('assets/fun_with_financials_2.webp', 'Interactive Fun Time Session — Full Auditorium Activity at Rotary PU College')">
+            <div class="modal-gallery-card" onclick="openImageLightbox('assets/fun_with_financials_2.webp', 'Interactive Fun Time Session - Full Auditorium Activity at Rotary PU College')">
               <div class="modal-gallery-thumb-wrap">
                 <img src="assets/fun_with_financials_2.webp" alt="Auditorium Activity Session" class="modal-gallery-img">
                 <span class="modal-zoom-hint">🔍 Expand</span>
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             </div>
 
-            <div class="modal-gallery-card" onclick="openImageLightbox('assets/fun_with_financials_3.webp', 'Live Classroom View — Interactive Slides and Engaged Commerce Students')">
+            <div class="modal-gallery-card" onclick="openImageLightbox('assets/fun_with_financials_3.webp', 'Live Classroom View - Interactive Slides and Engaged Commerce Students')">
               <div class="modal-gallery-thumb-wrap">
                 <img src="assets/fun_with_financials_3.webp" alt="Live Classroom Interaction" class="modal-gallery-img">
                 <span class="modal-zoom-hint">🔍 Expand</span>
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "Education",
       divisionBadge: "Education Division",
       flagshipBadge: "Interactive Legal Program",
-      title: "Objection My Lord — Understanding Law Through Experience",
+      title: "Objection My Lord - Understanding Law Through Experience",
       leadSubtitle: "An introduction to basic legal concepts through learning, discussion, real-life examples, and mock-court experiences.",
       date: "Program 02",
       readTime: "Education Pillar",
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Law governs everyday life, yet most students only experience it as distant jargon or frightening statutes. <strong>Objection My Lord</strong> introduces students to the foundational structure of rights, civil duties, consumer law, and the judicial process in an approachable, engaging manner.
           </p>
         </div>
-        <blockquote class="article-blockquote">"Connecting knowledge with real-world situations and practical understanding." — Pravakya Foundation</blockquote>
+        <blockquote class="article-blockquote">"Connecting knowledge with real-world situations and practical understanding." - Pravakya Foundation</blockquote>
         
         <h4 class="modal-section-heading">Key Highlights of the Program:</h4>
         <ul class="modal-bullet-list">
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "Education",
       divisionBadge: "Education Division",
       flagshipBadge: "Career Direction Workshop",
-      title: "Win-Win Career Compass — Helping Students Think About Their Future",
+      title: "Win-Win Career Compass - Helping Students Think About Their Future",
       leadSubtitle: "A career-awareness and orientation program that helps students explore academic pathways, industry expectations, and emerging opportunities.",
       date: "Program 03",
       readTime: "Education Pillar",
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
             With rapidly evolving career landscapes, students frequently face decision paralysis or rely solely on conventional paths. <strong>Win-Win Career Compass</strong> guides students through structured self-reflection, aptitude alignment, and real-world industry roadmaps.
           </p>
         </div>
-        <blockquote class="article-blockquote">"Helping people connect knowledge with real-world opportunities." — Pravakya Foundation</blockquote>
+        <blockquote class="article-blockquote">"Helping people connect knowledge with real-world opportunities." - Pravakya Foundation</blockquote>
         
         <h4 class="modal-section-heading">Key Highlights of the Program:</h4>
         <ul class="modal-bullet-list">
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "Education",
       divisionBadge: "Education Division",
       flagshipBadge: "Career Readiness Programme",
-      title: "PRO — Professional Readiness Orientation",
+      title: "PRO - Professional Readiness Orientation",
       leadSubtitle: "A career-readiness programme by Pravakya Foundation designed to prepare college students for the transition from campus to the professional world.",
       date: "Program 02",
       readTime: "Education Pillar",
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <blockquote class="article-blockquote">
           "PRO helps students move from <strong>“I am a graduate”</strong> to <strong>“I am ready for the workplace.”</strong>"
-          <span class="quote-author">— Pravakya Foundation</span>
+          <span class="quote-author">- Pravakya Foundation</span>
         </blockquote>
 
         <h3 class="modal-subheading" style="margin-top: 32px;">Core Focus Areas &amp; Practical Modules</h3>
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-gallery-section" style="margin-top: 40px;">
           <div class="modal-gallery-header">
             <div>
-              <h3 class="modal-subheading" style="margin-bottom: 4px;">Session Photo Gallery — PRO in Action</h3>
+              <h3 class="modal-subheading" style="margin-bottom: 4px;">Session Photo Gallery - PRO in Action</h3>
               <p class="gallery-subtext">Click on any photo below to view in full resolution</p>
             </div>
             <span class="gallery-count-pill">4 Session Photos</span>
@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "Education",
       divisionBadge: "Education Division",
       flagshipBadge: "Public Speaking & Communication",
-      title: "PPT Master — Present With Confidence",
+      title: "PPT Master - Present With Confidence",
       leadSubtitle: "A presentation-skills program focusing on narrative structure, body language, gestures, voice modulation, audience engagement, content delivery, and live feedback.",
       date: "Program 05",
       readTime: "Education Pillar",
@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Whether pitching an idea, defending a college project, or speaking before a crowd, effective presentation is a superpower. <strong>PPT Master</strong> combines theatre techniques, storytelling frameworks, and visual design to make every participant an articulate presenter.
           </p>
         </div>
-        <blockquote class="article-blockquote">"Building self-discovery, communication, and confidence." — Pravakya Foundation</blockquote>
+        <blockquote class="article-blockquote">"Building self-discovery, communication, and confidence." - Pravakya Foundation</blockquote>
         
         <h4 class="modal-section-heading">Key Highlights of the Program:</h4>
         <ul class="modal-bullet-list">
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "Art",
       divisionBadge: "Art Division",
       flagshipBadge: "Creative Dialogues & Culture",
-      title: "Pravakya Voices — Ideas. Experiences. Conversations.",
+      title: "Pravakya Voices - Ideas. Experiences. Conversations.",
       leadSubtitle: "A platform for meaningful conversations bringing together speakers, artists, professionals, educators, and individuals to share stories, knowledge, perspectives, and ideas.",
       date: "Program 06",
       readTime: "Art Pillar",
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Through our work in <strong>Art</strong>, we promote creativity, theatre, culture, self-discovery, and communication while creating awareness of the role of art in understanding our roots and shaping human empathy.
           </p>
         </div>
-        <blockquote class="article-blockquote">"A space where artists, educators, students, professionals, and institutions come together." — Pravakya Foundation</blockquote>
+        <blockquote class="article-blockquote">"A space where artists, educators, students, professionals, and institutions come together." - Pravakya Foundation</blockquote>
         
         <h4 class="modal-section-heading">Key Highlights of the Program:</h4>
         <ul class="modal-bullet-list">
@@ -423,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: "Service",
       divisionBadge: "Service Division",
       flagshipBadge: "In Active Development",
-      title: "Service & Civic Initiatives — Betterment of Society",
+      title: "Service & Civic Initiatives - Betterment of Society",
       leadSubtitle: "Our Service division encourages individuals and youth to use their skills, knowledge, and time for environmental care, civic responsibility, and community empowerment.",
       date: "Division 03",
       readTime: "Service Pillar",
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Our dedicated <strong>Service initiatives are currently in active development</strong>. We are in dialogue with local colleges, environmental groups, and youth volunteers to launch our inaugural civic engagement drives soon.
           </p>
         </div>
-        <blockquote class="article-blockquote">"Service is about understanding that our knowledge, time, skills, and abilities can also be used for the benefit of others and society." — Pravakya Foundation</blockquote>
+        <blockquote class="article-blockquote">"Service is about understanding that our knowledge, time, skills, and abilities can also be used for the benefit of others and society." - Pravakya Foundation</blockquote>
         
         <h4 class="modal-section-heading">Planned Focus Areas:</h4>
         <ul class="modal-bullet-list">
@@ -666,6 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
   /* --------------------------------------------------------------------------
      7. ANIMATED IMPACT COUNTERS
      -------------------------------------------------------------------------- */
@@ -840,7 +841,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal-featured-hero">
           <img src="${article.image}" alt="${article.title}" class="article-cover-img">
           <div class="hero-img-badge">
-            <span>${article.category === 'Education' ? 'Session Spotlight — Rotary PU College' : 'Pravakya Foundation Initiative'}</span>
+            <span>${article.category === 'Education' ? 'Session Spotlight - Rotary PU College' : 'Pravakya Foundation Initiative'}</span>
           </div>
         </div>` : ''}
 
@@ -1022,13 +1023,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     const nameInput = document.getElementById('contact-name');
     const emailInput = document.getElementById('contact-email');
+    const phoneInput = document.getElementById('contact-phone');
     const subjectInput = document.getElementById('contact-subject');
     const msgInput = document.getElementById('contact-msg');
+    const submitBtn = document.getElementById('submit-contact-btn');
 
     const errName = document.getElementById('err-name');
     const errEmail = document.getElementById('err-email');
     const errSubject = document.getElementById('err-subject');
     const errMsg = document.getElementById('err-msg');
+
+    let isSubmitting = false;
 
     function setFieldError(input, errorSpan, isError) {
       if (!input) return;
@@ -1054,11 +1059,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (subjectInput) subjectInput.addEventListener('change', () => setFieldError(subjectInput, errSubject, !subjectInput.value));
     if (msgInput) msgInput.addEventListener('input', () => setFieldError(msgInput, errMsg, !msgInput.value.trim()));
 
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      // Prevent duplicate submissions
+      if (isSubmitting) return;
 
       const nameVal = nameInput ? nameInput.value.trim() : '';
       const emailVal = emailInput ? emailInput.value.trim() : '';
+      const phoneVal = phoneInput ? phoneInput.value.trim() : '';
       const subjectVal = subjectInput ? subjectInput.value : '';
       const msgVal = msgInput ? msgInput.value.trim() : '';
 
@@ -1072,21 +1081,78 @@ document.addEventListener('DOMContentLoaded', () => {
       setFieldError(subjectInput, errSubject, !isSubjectValid);
       setFieldError(msgInput, errMsg, !isMsgValid);
 
-      if (isNameValid && isEmailValid && isSubjectValid && isMsgValid) {
-        showToast(`Thank you, ${nameVal}! Your message has been sent to our leadership team. We will respond within 24 hours.`);
-        contactForm.reset();
-        [nameInput, emailInput, subjectInput, msgInput].forEach(inp => {
-          if (inp) {
-            inp.classList.remove('is-invalid');
-            inp.removeAttribute('aria-invalid');
-          }
-        });
-      } else {
+      if (!isNameValid || !isEmailValid || !isSubjectValid || !isMsgValid) {
         // Focus first invalid input for accessibility
         if (!isNameValid && nameInput) nameInput.focus();
         else if (!isEmailValid && emailInput) emailInput.focus();
         else if (!isSubjectValid && subjectInput) subjectInput.focus();
         else if (!isMsgValid && msgInput) msgInput.focus();
+        return;
+      }
+
+      // Enter loading state
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      isSubmitting = true;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span>Sending Message...</span>
+          <svg class="btn-spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+            <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+          </svg>
+        `;
+      }
+
+      try {
+        const formData = new FormData(contactForm);
+
+        // Ensure key values are present
+        if (!formData.has('access_key') || !formData.get('access_key')) {
+          formData.set('access_key', '6788d1cc-7252-4637-bede-4b68d798b00a');
+        }
+        if (!formData.has('from_name')) {
+          formData.set('from_name', 'Pravakya Foundation Website');
+        }
+        formData.set('subject', `Website Enquiry: ${subjectVal} - ${nameVal}`);
+        formData.set('phone', phoneVal || 'Not provided');
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200 && result.success) {
+          showToast(`Thank you, ${nameVal}! Your message has been sent successfully. We will respond within 24 hours.`, 'success');
+          contactForm.reset();
+          [nameInput, emailInput, phoneInput, subjectInput, msgInput].forEach(inp => {
+            if (inp) {
+              inp.classList.remove('is-invalid');
+              inp.removeAttribute('aria-invalid');
+            }
+          });
+        } else {
+          const errorMsg = result.message || 'Unable to submit your message. Please try again or email us directly.';
+          showToast(errorMsg, 'error');
+        }
+      } catch (err) {
+        showToast('Network error: Unable to send your message. Please check your connection and try again.', 'error');
+      } finally {
+        isSubmitting = false;
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        }
       }
     });
   }
@@ -1119,18 +1185,20 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --------------------------------------------------------------------------
      14. TOAST NOTIFICATION UTILITY
      -------------------------------------------------------------------------- */
-  function showToast(message) {
+  function showToast(message, type = 'success') {
     const container = document.getElementById('toast-container');
     if (!container) return;
 
     const toast = document.createElement('div');
-    toast.className = 'toast';
+    toast.className = type === 'error' ? 'toast toast-error' : 'toast';
+
+    const iconSvg = type === 'error'
+      ? `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`
+      : `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`;
+
     toast.innerHTML = `
       <div class="toast-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-          <polyline points="22 4 12 14.01 9 11.01"/>
-        </svg>
+        ${iconSvg}
       </div>
       <div class="toast-message">${message}</div>
     `;
@@ -1142,7 +1210,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.style.transform = 'translateX(100%)';
       toast.style.transition = 'all 0.4s ease';
       setTimeout(() => toast.remove(), 400);
-    }, 4500);
+    }, 5000);
   }
 
   window.showToast = showToast;
