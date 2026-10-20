@@ -641,10 +641,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  function closeMobileNav() {
+    if (mainNav && mainNav.classList.contains('active')) {
+      mainNav.classList.remove('active');
+      if (mobileToggle) {
+        mobileToggle.classList.remove('active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+      document.body.classList.remove('nav-open');
+    }
+  }
+
   if (mobileToggle && mainNav) {
-    mobileToggle.addEventListener('click', () => {
-      mobileToggle.classList.toggle('active');
-      mainNav.classList.toggle('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mainNav.classList.toggle('active');
+      mobileToggle.classList.toggle('active', isOpen);
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      document.body.classList.toggle('nav-open', isOpen);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (mainNav.classList.contains('active')) {
+        if (!mainNav.contains(e.target) && !mobileToggle.contains(e.target)) {
+          closeMobileNav();
+        }
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mainNav.classList.contains('active')) {
+        closeMobileNav();
+      }
     });
   }
 
@@ -922,6 +951,7 @@ document.addEventListener('DOMContentLoaded', () => {
      -------------------------------------------------------------------------- */
   function openDonateModal() {
     if (donateModal) {
+      closeMobileNav();
       closeArticleModal();
       donateModal.classList.add('active');
       donateModal.removeAttribute('inert');
@@ -988,16 +1018,79 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Handle Donation Submit
+  // Handle Get Involved / Collaboration Modal Submit
   if (donateForm) {
-    donateForm.addEventListener('submit', (e) => {
+    donateForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const nameInput = document.getElementById('donor-name');
-      const name = nameInput ? nameInput.value.trim() : 'Friend';
+      const emailInput = document.getElementById('donor-email');
+      const phoneInput = document.getElementById('donor-phone');
+      const orgInput = document.getElementById('donor-pan');
+      const submitBtn = document.getElementById('confirm-donation-btn');
 
-      closeDonateModalFn();
-      showToast(`Thank you, ${name}! Your collaboration request has been received. Our leadership team will connect with you.`);
-      donateForm.reset();
+      const nameVal = nameInput ? nameInput.value.trim() : '';
+      const emailVal = emailInput ? emailInput.value.trim() : '';
+      const phoneVal = phoneInput ? phoneInput.value.trim() : '';
+      const orgVal = orgInput ? orgInput.value.trim() : '';
+
+      const activeTier = document.querySelector('.tier-card.active');
+      const trackVal = activeTier ? (activeTier.querySelector('.tier-label')?.textContent || activeTier.getAttribute('data-amount')) : 'General Interest';
+
+      if (!nameVal || !emailVal) {
+        showToast('Please enter your full name and email address.', 'error');
+        return;
+      }
+
+      const origBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span>Submitting Request...</span>
+          <svg class="btn-spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+            <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+          </svg>
+        `;
+      }
+
+      try {
+        const payload = {
+          access_key: '6788d1cc-7252-4637-bede-4b68d798b00a',
+          from_name: 'Pravakya Foundation Website',
+          subject: `Get Involved Request: ${trackVal} - ${nameVal}`,
+          name: nameVal,
+          email: emailVal,
+          phone: phoneVal || 'Not provided',
+          organisation: orgVal || 'Not provided',
+          track: trackVal,
+          message: `New Get Involved Submission:\n• Name: ${nameVal}\n• Email: ${emailVal}\n• Phone: ${phoneVal || 'Not provided'}\n• Organisation / Institution: ${orgVal || 'Not provided'}\n• Selected Track: ${trackVal}`
+        };
+
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        if (res.status === 200 && data.success) {
+          closeDonateModalFn();
+          showToast(`Thank you, ${nameVal}! Your request has been sent to our team. We will get in touch shortly.`, 'success');
+          donateForm.reset();
+        } else {
+          showToast(data.message || 'Unable to submit your request. Please try again.', 'error');
+        }
+      } catch (err) {
+        showToast('Network error: Unable to submit your request. Please check your connection.', 'error');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = origBtnHtml;
+        }
+      }
     });
   }
 
