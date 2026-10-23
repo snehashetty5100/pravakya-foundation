@@ -1,0 +1,21 @@
+{
+  "name": "Pravakya Foundation",
+  "short_name": "Pravakya",
+  "description": "Pravakya Foundation is a purpose-driven non-profit initiative working at the intersection of Art, Education and Service.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#142343",
+  "icons": [
+    {
+      "src": "/assets/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
