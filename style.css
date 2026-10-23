@@ -452,6 +452,10 @@ button {
   list-style: none;
 }
 
+.nav-mobile-cta {
+  display: none;
+}
+
 .nav-link {
   position: relative;
   z-index: 1;
